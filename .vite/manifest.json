@@ -1,0 +1,61 @@
+{
+  "_foodcart_hd-BIRkPApC.css": {
+    "file": "assets/css/foodcart_hd-BIRkPApC.css",
+    "src": "_foodcart_hd-BIRkPApC.css"
+  },
+  "_foodcart_hd-tU1Xq6Uj.js": {
+    "file": "assets/js/foodcart_hd-tU1Xq6Uj.js",
+    "name": "foodcart_hd",
+    "css": [
+      "assets/css/foodcart_hd-BIRkPApC.css"
+    ]
+  },
+  "_loader-4gA1zna9.js": {
+    "file": "assets/js/loader-4gA1zna9.js",
+    "name": "loader"
+  },
+  "assets/fonteawesome-6.5.2-all.min.css": {
+    "file": "assets/css/fonteawesome-6.5.2-all.min-Bo90NjKP.css",
+    "src": "assets/fonteawesome-6.5.2-all.min.css"
+  },
+  "assets/greencarts.svg": {
+    "file": "assets/images/greencarts-CdT6Zn_k.svg",
+    "src": "assets/greencarts.svg"
+  },
+  "assets/images/Nutragold-pr_5.webp": {
+    "file": "assets/images/Nutragold-pr_5-DuAgSmxa.webp",
+    "src": "assets/images/Nutragold-pr_5.webp"
+  },
+  "assets/images/nutragold-hb.webp": {
+    "file": "assets/images/nutragold-hb-DfFv35wd.webp",
+    "src": "assets/images/nutragold-hb.webp"
+  },
+  "assets/images/nutragold-pg.webp": {
+    "file": "assets/images/nutragold-pg-CrRgKMaJ.webp",
+    "src": "assets/images/nutragold-pg.webp"
+  },
+  "assets/images/nutragold-sg.webp": {
+    "file": "assets/images/nutragold-sg-BLz-AeVA.webp",
+    "src": "assets/images/nutragold-sg.webp"
+  },
+  "assets/images/webp/nutragold-stacks-2.webp": {
+    "file": "assets/images/nutragold-stacks-2-BgSXjAL4.webp",
+    "src": "assets/images/webp/nutragold-stacks-2.webp"
+  },
+  "assets/nutragold.svg": {
+    "file": "assets/images/nutragold-D0wxJHQU.svg",
+    "src": "assets/nutragold.svg"
+  },
+  "search.html": {
+    "file": "assets/js/search-gUbJGnmS.js",
+    "name": "search",
+    "src": "search.html",
+    "isEntry": true,
+    "imports": [
+      "_foodcart_hd-tU1Xq6Uj.js"
+    ],
+    "assets": [
+      "assets/css/fonteawesome-6.5.2-all.min-Bo90NjKP.css"
+    ]
+  }
+}

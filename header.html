@@ -1,0 +1,186 @@
+    <body class="page-loading">
+
+        <!-- ============================================ -->
+        <!-- HEADER -->
+        <!-- ============================================ -->
+        <header class="site-header">
+
+            <!-- Top Utility Announcement Banner -->
+            <div id="siteNoticeBar" class="notice-bar" role="region" aria-label="Site notice" data-dismiss-timeout="5000">
+
+                <div class="notice-bar-inner relative container">
+
+                    <!-- Universal Promo Slide 1 (Applies to Guest, Retail, Wholesale) -->
+                    <div data-notice="promo" class="notice-bar-content">
+                        <span class="notice-bar-item">
+                            <!-- <span class="fas fa-gift"></span> -->
+                            <span>Get 5% off your first order — use code <strong>GRAINS10</strong></span>
+                        </span>
+                    </div>
+
+                    <!-- Guest Message Slide 2 (Rotates with Promo slide for Guests) -->
+                    <div data-notice="guest" class="notice-bar-content">
+                        <span class="notice-bar-item">
+                            <!-- <span class="fas fa-user-plus"></span> -->
+                            <span>Register as a buyer to enjoy exclusive offers — 
+                                <a href="register.html" class="notice-bar-link">Register Now →</a>
+                            </span>
+                        </span>
+                    </div>
+
+                    <!-- Retail Message Slide 2 (Rotates with Promo slide for Retail users) -->
+                    <div data-notice="retail" class="notice-bar-content">
+                        <span class="notice-bar-item">
+                            <!-- <span class="fas fa-truck-fast"></span> -->
+                            <span>Get <strong>50%</strong> off Express Shipping on orders above ₦250,000!</span>
+                        </span>
+                    </div>
+
+                    <!-- Wholesale Message Slide 2 (Rotates with Promo slide for Wholesalers) -->
+                    <div data-notice="wholesale" class="notice-bar-content">
+                        <span class="notice-bar-item">
+                            <!-- <span class="fas fa-boxes-packing"></span> -->
+                            <span>Order above ₦1,000,000 to unlock <strong>Free Standard Shipping</strong></span>
+                        </span>
+                    </div>
+
+                    <!-- Close Button -->
+                    <button id="closeNoticeBtn" class="notice-bar-close" aria-label="Dismiss notice" type="button" data-notice-close>
+                        <span class="fas fa-xmark"></span>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="main-header">
+
+                <div class="header-inner container">
+
+                    <!-- 2. Site Branding -->
+                     <div class="site-branding">
+                    
+                        <!-- 1. Brand Logo -->
+                        <a href="index.html" class="site-logo" title="Home" aria-label="GreenCart Stores">
+
+                            <svg class="logo-mark" aria-hidden="true">
+                                <use class="use-full" href="/foodcart/assets/images/greencarts-CdT6Zn_k.svg#logo-full"></use>
+                                <use class="use-compact" href="/foodcart/assets/images/greencarts-CdT6Zn_k.svg#logo-compact"></use>
+                                <!--<use class="use-lone" href="assets/greencarts.svg#logo-lone"></use>-->
+                            </svg>
+  
+                        </a>
+                    
+                        <!-- 4. Dynamic Wholesale Status Badge -->
+                        <div id="pricing-status-pill" class="pricing-status-pill retail mobile-pill d-none">
+                            <span class="status-dot"></span>
+                            <span id="pillPricingText" class="status-text">Retail</span>
+                        </div>
+
+                     </div>
+
+                    <!-- 3. Primary Navigation -->
+                    <div class="nav-bar d-none">
+
+                        <nav id="primary-nav" class="nav-links">
+                            <div class="nav-link"><a href="catalogue.html">Catalogue</a></div>
+                            <div class="nav-link"><a href="contact.html">Contact</a></div>
+                        </nav>
+
+                    </div>                    
+
+                    <!-- 4. Dynamic Wholesale Status Badge -->
+                    <div id="pricing-status-pill" class="pricing-status-pill retail desktop-pill d-none">
+                        <span class="status-dot"></span>
+                        <span id="pillPricingText" class="status-text">Guest</span>
+                    </div>      
+
+                    <!-- 5. Central Search Bar -->
+                    <div id="searchBar" class="search-bar">
+                        <form id="searchForm" action="search.html" method="GET" class="search-form">
+                            <input id="searchInput" type="text" name="q" placeholder="Search food staples, rice, beans, garri..." autocomplete="off">
+                            <button class="search-btn" type="submit" aria-label="Search">
+                                <span title="Search" class="search-icon fa-solid fa-search" role="img"></spam>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- 6. Header Action Utilities -->
+                    <div class="header-buttons">
+                        
+                        <!-- 1. Mobile Hamburger Toggle Button -->
+                        <a href="catalogue.html" class="catalog-toggle" title="Catalogue">
+                            <span class="catalog-icon fa-solid fa-list-ul"></span>
+                            <span class="catalog-label">Catalog</span>
+                        </button>
+                        
+                        <!-- Cart Icon & Badge -->
+                        <a 
+                            id="miniCartTrigger"
+                            data-cart-toggle
+                            class="cart-toggle"
+                            role="button"
+                            tabindex="0"
+                            title="Mini Cart Trigger"
+                            aria-label="Open cart"
+                            aria-haspopup="dialog"
+                            aria-controls="miniCart"
+                            aria-expanded="false"
+                        >
+                            <button 
+                                type="button"
+                                class="cart-btn"
+                                aria-haspopup="dialog"
+                                aria-expanded="false"
+                                aria-controls="miniCart"
+                                aria-label="Open cart"
+                            >
+                                <span class="cart-count bg-amber">0</span>
+                                <span class="cart-icon fa-solid fa-cart-shopping" role="img" aria-label="Mini Cart"></span>
+                            </button>
+                            <span class="cart-label">Cart</span>
+                        </a>
+
+                        <!-- LOGGED-OUT STATE: Login / Register Dropdown -->
+                        <div id="profile-logged-out" class="user-access profile-login-span" title="Login/Register">
+
+                            <button type="button" class="profile-toggle" aria-haspopup="true" aria-expanded="false">
+                                <span class="profile-icon fa-solid fa-user" role="img" aria-label="User-Logout-Icon"></span> 
+                                <span class="profile-label">Account</span>
+                            </button>
+
+                            <div class="profile-tabs">
+                                <a id="simulateLoginBtn" href="login.html" class="login-btn" data-auth="login">Login</a>
+                                <a id="simulateRegisterBtn" href="register.html" class="register-btn" data-auth="register">Register</a>
+                            </div>
+
+                        </div>
+
+                        <!-- LOGGED-IN STATE: Account & Logout Display -->
+                        <div id="profile-logged-in" class="user-access profile-logout-span hide" title="Logout/Track Order">
+
+                            <button id="userBadgeWrapper" class="profile-toggle" aria-haspopup="true" aria-expanded="false">
+                                <span class="profile-icon fa-solid fa-user" role="img" aria-label="User-Logout-Icon"></span>                                    
+                                <div class="profile-label user-greeting"> <span class="greeting-prefix">Hi,</span> <span class="user-name header-user-display"></span>                                                                    </div>
+                            </button>
+
+                            <div class="profile-tabs">
+                                <a id="track-order" href="track-order.html" class="track-order" title="Track Order">Track Order</a>
+                                <a id="logoutBtn" href="#" class="logout-button" title="Log out">Log Out</a>
+                            </div>
+
+                        </div>
+
+                        <!-- 1. Mobile Hamburger Toggle Button -->
+                        <button id="mobileToggle" class="mobile-toggle d-none" role="button" aria-label="Toggle Navigation">
+                            ☰
+                            <span class="navbar-toggler-icon fa-solid fa-list-ul"></span>
+                        </button>                        
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
