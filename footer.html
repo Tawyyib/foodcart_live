@@ -773,24 +773,27 @@
 
                 </div>
 
-                <!-- VIEW: SUCCESS -->
+                <!-- VIEW: LOGIN/REGISTER SUCCESS
                 <div id="authViewSuccess" class="auth-view">
+
                     <div class="auth-success-wrap">
+
                         <div class="auth-success-header">
+
                             <span class="icon">🎉</span>
 
-                            <!-- Login Messages -->
+                             Login Messages
                             <h2 class="title login" style="display:none;">Login Successful!</h2>
                             <p id="successBusinessName" class="desc login" style="display:none;">Welcome Back,&nbsp;<strong>Adeola</strong>!</p>
-                            <p class="desc login" style="display:none;">Access to exclusive wholesale prices now restored.</p>
+                            <p class="desc login" style="display:none;">Access to exclusive wholesale prices now restored.</p> -->
 
-                            <!-- Register Messages -->
+                            <!-- Register Messages
                             <h2 class="title register" style="display:block;">Registration Successful!</h2>
                             <p id="successBusinessName" class="desc register" style="display:block;">Welcome,&nbsp;<strong>Retailer</strong>!</p>
                             <p class="desc register" style="display:block;">Access to exclusive wholesale prices now granted.</p>
-                        </div>
+                        </div> -->
 
-                        <div class="auth-success-grid">
+                        <!--<div class="auth-success-grid">
                             <button onclick="handleSuccessStartShopping()" class="btn btn-green btn-submit">🛒 Go to Store</button>
                             <button onclick="handleSuccessDashboard()" class="btn btn-outline btn-submit">📊 Go to Dashboard</button>
                             <button class="btn btn-primary btn-submit" onclick="handleSuccessRedirect()">🛒 Continue with Current View</button>
@@ -798,6 +801,62 @@
 
                         <div class="auth-success-footer">
                             <p class="footnote">🔒 You are now logged in as a wholesale customer.</p>
+                            <a href="#" class="logout" onclick="handleSuccessLogout(); return false;">Logout</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- VIEW: LOGIN/REGISTER SUCCESS -->
+                <div id="authViewSuccess" class="auth-view">
+
+                    <div class="auth-success-wrap">
+
+                        <div class="auth-success-header">
+
+                            <span class="icon">
+                                <span class="fas fa-circle-check" aria-hidden="true"></span>
+                            </span>
+
+                            <!-- Login Messages -->
+                            <h2 class="title login">Login Successful!</h2>
+                            <p class="desc login success-name">
+                                Welcome back,&nbsp;<strong>Adeola</strong>!
+                            </p>
+                            <p class="desc login success-message">
+                                Your account is ready. Enjoy your pricing tier.
+                            </p>
+
+                            <!-- Register Messages -->
+                            <h2 class="title register">Registration Successful!</h2>
+                            <p class="desc register success-name">
+                                Welcome,&nbsp;<strong>Retailer</strong>!
+                            </p>
+                            <p class="desc register success-message">
+                                Your account is ready. Enjoy your pricing tier.
+                            </p>
+                        </div>
+
+                        <div class="auth-success-grid">
+                            <button type="button" onclick="handleSuccessStartShopping()" class="btn btn-green btn-submit">
+                                <span class="fas fa-cart-shopping" aria-hidden="true"></span>
+                                Go to Store
+                            </button>
+                            <button type="button" onclick="handleSuccessDashboard()" class="btn btn-outline btn-submit">
+                                <span class="fas fa-chart-pie" aria-hidden="true"></span>
+                                Go to Dashboard
+                            </button>
+                            <button type="button" onclick="handleSuccessRedirect()" class="btn btn-primary btn-submit">
+                                <span class="fas fa-arrow-right" aria-hidden="true"></span>
+                                Continue with Current View
+                            </button>
+                        </div>
+
+                        <div class="auth-success-footer">
+                            <p class="footnote">
+                                <span class="fas fa-lock" aria-hidden="true"></span>
+                                You are now logged in as a
+                                <span class="account-type-label">customer</span>.
+                            </p>
                             <a href="#" class="logout" onclick="handleSuccessLogout(); return false;">Logout</a>
                         </div>
                     </div>
