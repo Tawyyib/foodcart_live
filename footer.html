@@ -862,7 +862,7 @@
                     </div>
                 </div>
 
-                <!-- VIEW: ORDER SUCCESS -->
+                <!-- VIEW: ORDER SUCCESS
                 <div id="authViewOrderSuccess" class="auth-view">
 
                     <div class="auth-success-wrap">
@@ -896,9 +896,71 @@
 
                     </div>
 
-                </div>
+                </div> -->
 
-                <!-- VIEW: ORDER ERROR -->
+                <!-- VIEW: ORDER SUCCESS -->
+                <div id="authViewOrderSuccess" class="auth-view">
+
+                    <div class="auth-success-wrap">
+
+                        <div class="auth-success-header">
+                            <span class="icon">
+                                <span class="fas fa-circle-check" aria-hidden="true"></span>
+                            </span>
+                            <h2 class="title">Order Placed Successfully!</h2>
+                            <p class="desc">
+                                Thank you for your order,
+                                <strong id="orderCustomerName">Retailer</strong>!
+                            </p>
+                            <p class="desc">Your order has been confirmed and is being processed.</p>
+                        </div>
+
+                        <div class="order-summary-box">
+                            <p>
+                                <strong>Order Number:</strong>
+                                <span id="orderNumber">#ORD-2026-001</span>
+                            </p>
+                            <p>
+                                <strong>Total:</strong>
+                                <span id="orderTotal">₦97,700</span>
+                            </p>
+                            <p>
+                                <strong>Delivery:</strong>
+                                <span id="orderDelivery">Lagos (Ikeja) – Express</span>
+                            </p>
+                            <p>
+                                <strong>Estimated Delivery:</strong>
+                                <span id="orderETA">Today, 5:00 PM</span>
+                            </p>
+                        </div>
+
+                        <div class="auth-success-grid">
+                            <button type="button" onclick="handleOrderContinueShopping()" class="btn btn-green btn-submit">
+                                <span class="fas fa-cart-shopping" aria-hidden="true"></span>
+                                Continue Shopping
+                            </button>
+                            <button type="button" onclick="handleOrderViewHistory()" class="btn btn-outline btn-submit">
+                                <span class="fas fa-receipt" aria-hidden="true"></span>
+                                View Orders
+                            </button>
+                            <button type="button" onclick="handleOrderDownloadInvoice()" class="btn btn-primary btn-submit">
+                                <span class="fas fa-file-invoice" aria-hidden="true"></span>
+                                Download Invoice
+                            </button>
+                        </div>
+
+                        <div class="auth-success-footer">
+                            <p class="footnote">
+                                <span class="fas fa-envelope" aria-hidden="true"></span>
+                                A confirmation email has been sent to your email address.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>                
+
+                <!-- VIEW: ORDER ERROR
                 <div id="authViewOrderError" class="auth-view" >
 
                     <div class="auth-success-wrap">
@@ -922,7 +984,48 @@
 
                     </div>
 
-                </div>
+                </div> -->
+
+                <!-- VIEW: ORDER ERROR -->
+                <div id="authViewOrderError" class="auth-view">
+
+                    <div class="auth-success-wrap">
+
+                        <div class="auth-success-header">
+                            <span class="icon icon--error">
+                                <span class="fas fa-circle-xmark" aria-hidden="true"></span>
+                            </span>
+                            <h2 class="title">Order Failed</h2>
+                            <p class="desc">We're sorry, but we couldn't complete your order.</p>
+                            <p class="desc error" id="orderErrorMessage">
+                                Payment verification failed. Please try again.
+                            </p>
+                        </div>
+
+                        <div class="auth-success-grid">
+                            <button type="button" onclick="handleOrderRetry()" class="btn btn-green btn-submit">
+                                <span class="fas fa-rotate-right" aria-hidden="true"></span>
+                                Try Again
+                            </button>
+                            <button type="button" onclick="handleOrderContactSupport()" class="btn btn-outline btn-submit">
+                                <span class="fas fa-headset" aria-hidden="true"></span>
+                                Contact Support
+                            </button>
+                            <button type="button" onclick="handleOrderReturnToCart()" class="btn btn-primary btn-submit">
+                                <span class="fas fa-cart-shopping" aria-hidden="true"></span>
+                                Return to Cart
+                            </button>
+                        </div>
+
+                        <div class="auth-success-footer">
+                            <p class="footnote">
+                                If this issue persists, please contact our support team.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>                
 
             </div>
 
