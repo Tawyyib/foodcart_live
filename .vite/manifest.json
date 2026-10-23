@@ -3,8 +3,8 @@
     "file": "assets/css/foodcart_hd-2_M7bdSt.css",
     "src": "_foodcart_hd-2_M7bdSt.css"
   },
-  "_foodcart_hd-BT3CpZJY.js": {
-    "file": "assets/js/foodcart_hd-BT3CpZJY.js",
+  "_foodcart_hd-CuotNS6e.js": {
+    "file": "assets/js/foodcart_hd-CuotNS6e.js",
     "name": "foodcart_hd",
     "css": [
       "assets/css/foodcart_hd-2_M7bdSt.css"
@@ -88,12 +88,12 @@
     "src": "assets/nutragold.svg"
   },
   "search.html": {
-    "file": "assets/js/search-D3G2YkhG.js",
+    "file": "assets/js/search-C0-zfYfd.js",
     "name": "search",
     "src": "search.html",
     "isEntry": true,
     "imports": [
-      "_foodcart_hd-BT3CpZJY.js",
+      "_foodcart_hd-CuotNS6e.js",
       "_loader-4gA1zna9.js"
     ]
   },
