@@ -301,7 +301,7 @@
 
                     <div class="auth-grid">
                         
-                        <!-- register  form -->
+                        <!-- login  form -->
                         <div class="auth-form auth-form-login">
 
                             <p>Welcome Back. Access your account.</p>
@@ -316,6 +316,7 @@
                                     <div class="cust-type">
                                         
                                         <label for="loginTypeRetail" class="cust-type-selector">
+
                                             <input 
                                                 id="loginTypeRetail"
                                                 class="radio-selector" 
@@ -324,13 +325,15 @@
                                                 value="retail" 
                                                 checked
                                             >
-                                            <span>
+                                            <span class="select-span">
                                                 <span class="fa-solid fa-cart-shopping" aria-hidden="true"></span>
-                                                Home Shopper
+                                                Household Buyer
                                             </span>
+
                                         </label>
 
                                         <label for="loginTypeWholesale" class="cust-type-selector">
+
                                             <input 
                                                 id="loginTypeWholesale"
                                                 class="radio-selector" 
@@ -338,10 +341,11 @@
                                                 type="radio" 
                                                 value="wholesale"
                                             > 
-                                            <span>
+                                            <span class="select-span">
                                                 <span class="fa-solid fa-building" aria-hidden="true"></span>
-                                                Business
+                                                Business Buyer
                                             </span>
+
                                         </label>
 
                                     </div>
@@ -386,6 +390,7 @@
                                 <div class="form-meta">
                                             
                                     <div class="check-wrap">
+
                                         <input 
                                             id="remember-auth" 
                                             class="auth-check"
@@ -393,6 +398,7 @@
                                             checked
                                         >
                                         <label class="auth-label" for="remember-auth">Remember me</label>
+
                                     </div>
                                         
                                     <a href="forgot-password.html" class="pass-forgot">
@@ -498,7 +504,7 @@
                                     aria-selected="true"
                                 >
                                     <span class="fa-solid fa-cart-shopping" aria-hidden="true"></span>
-                                    Home Shopper
+                                    Household Buyer
                                 </button>
 
                                 <button
@@ -510,7 +516,7 @@
                                     aria-selected="false"
                                 >
                                     <span class="fa-solid fa-building" aria-hidden="true"></span>
-                                    Business
+                                    Business Buyer
                                 </button>
 
                             </div>                            
@@ -593,10 +599,12 @@
 
                                         <!-- Business Type -->                                                                    
                                         <div class="input-wrap">
+
                                             <span class="auth-label">
                                                 Business Type 
                                                 <span class="required">*</span>
                                             </span>
+
                                             <div class="select-wrap">
                                                 <select 
                                                     id="regBusinessType"
@@ -613,6 +621,7 @@
                                                     <option value="Restaurant">Restaurant / Hotel</option>
                                                 </select>
                                             </div>
+
                                         </div>
 
                                     </div>
@@ -773,39 +782,6 @@
 
                 </div>
 
-                <!-- VIEW: LOGIN/REGISTER SUCCESS
-                <div id="authViewSuccess" class="auth-view">
-
-                    <div class="auth-success-wrap">
-
-                        <div class="auth-success-header">
-
-                            <span class="icon">🎉</span>
-
-                             Login Messages
-                            <h2 class="title login" style="display:none;">Login Successful!</h2>
-                            <p id="successBusinessName" class="desc login" style="display:none;">Welcome Back,&nbsp;<strong>Adeola</strong>!</p>
-                            <p class="desc login" style="display:none;">Access to exclusive wholesale prices now restored.</p> -->
-
-                            <!-- Register Messages
-                            <h2 class="title register" style="display:block;">Registration Successful!</h2>
-                            <p id="successBusinessName" class="desc register" style="display:block;">Welcome,&nbsp;<strong>Retailer</strong>!</p>
-                            <p class="desc register" style="display:block;">Access to exclusive wholesale prices now granted.</p>
-                        </div> -->
-
-                        <!--<div class="auth-success-grid">
-                            <button onclick="handleSuccessStartShopping()" class="btn btn-green btn-submit">🛒 Go to Store</button>
-                            <button onclick="handleSuccessDashboard()" class="btn btn-outline btn-submit">📊 Go to Dashboard</button>
-                            <button class="btn btn-primary btn-submit" onclick="handleSuccessRedirect()">🛒 Continue with Current View</button>
-                        </div>
-
-                        <div class="auth-success-footer">
-                            <p class="footnote">🔒 You are now logged in as a wholesale customer.</p>
-                            <a href="#" class="logout" onclick="handleSuccessLogout(); return false;">Logout</a>
-                        </div>
-                    </div>
-                </div> -->
-
                 <!-- VIEW: LOGIN/REGISTER SUCCESS -->
                 <div id="authViewSuccess" class="auth-view">
 
@@ -814,7 +790,8 @@
                         <div class="auth-success-header">
 
                             <span class="icon">
-                                <span class="fas fa-circle-check" aria-hidden="true"></span>
+                                <span class="fas fa-circle-check icon-login login" aria-hidden="true"></span>
+                                <span class="fas fa-user-plus icon-register register" aria-hidden="true"></span>
                             </span>
 
                             <!-- Login Messages -->
@@ -834,69 +811,43 @@
                             <p class="desc register success-message">
                                 Your account is ready. Enjoy your pricing tier.
                             </p>
+
                         </div>
 
                         <div class="auth-success-grid">
-                            <button type="button" onclick="handleSuccessStartShopping()" class="btn btn-green btn-submit">
+
+                            <button type="button" data-auth-action="start-shopping" class="btn btn-green btn-submit">
                                 <span class="fas fa-cart-shopping" aria-hidden="true"></span>
-                                Go to Store
+                                View Catalogue
                             </button>
-                            <button type="button" onclick="handleSuccessDashboard()" class="btn btn-outline btn-submit">
-                                <span class="fas fa-chart-pie" aria-hidden="true"></span>
-                                Go to Dashboard
+
+                            <button type="button" data-auth-action="view-dashboard" class="btn btn-outline btn-submit">
+                                <span class="fas fa-tachograph-digital" aria-hidden="true"></span>
+                                View Dashboard
                             </button>
-                            <button type="button" onclick="handleSuccessRedirect()" class="btn btn-primary btn-submit">
+
+                            <button type="button" data-auth-action="redirect" class="btn btn-primary btn-submit">
                                 <span class="fas fa-arrow-right" aria-hidden="true"></span>
-                                Continue with Current View
+                                Continue
                             </button>
+
                         </div>
 
                         <div class="auth-success-footer">
+
                             <p class="footnote">
                                 <span class="fas fa-lock" aria-hidden="true"></span>
                                 You are now logged in as a
                                 <span class="account-type-label">customer</span>.
                             </p>
-                            <a href="#" class="logout" onclick="handleSuccessLogout(); return false;">Logout</a>
+
+                            <a href="#" class="logout" data-auth-action="logout">Log out</a>
+
                         </div>
+
                     </div>
+
                 </div>
-
-                <!-- VIEW: ORDER SUCCESS
-                <div id="authViewOrderSuccess" class="auth-view">
-
-                    <div class="auth-success-wrap">
-
-                        <div class="auth-success-header">
-                            <span class="icon">🎉</span>
-                            <h2 class="title">Order Placed Successfully!</h2>
-                            <p class="desc">Thank you for your order, <strong id="orderCustomerName">Retailer</strong>!</p>
-                            <p class="desc">Your order has been confirmed and is being processed.</p>
-                        </div>
-
-                        <div class="order-summary-box" style="background:#f8fafc; padding:16px; border-radius:8px; margin:12px 0; text-align:left;">
-                            <p><strong>Order Number:</strong> <span id="orderNumber">#ORD-2026-001</span></p>
-                            <p><strong>Total:</strong> <span id="orderTotal">₦97,700</span></p>
-                            <p><strong>Delivery:</strong> <span id="orderDelivery">Lagos (Ikeja) – Express</span></p>
-                            <p><strong>Estimated Delivery:</strong> <span id="orderETA">Today, 5:00 PM</span></p>
-                        </div>
-
-                        <div class="auth-success-grid">
-                            <button onclick="handleOrderContinueShopping()" class="btn btn-green btn-submit">🛒 Continue Shopping</button>
-                            <button onclick="handleOrderViewHistory()" class="btn btn-outline btn-submit">📊 View Orders</button>
-                            <button onclick="handleOrderDownloadInvoice()" class="btn btn-primary btn-submit">📄 Download Invoice</button>
-                        </div>
-
-                        <div class="auth-success-footer">
-                            <p class="footnote">
-                                <span class="fa-solid fa-lock" aria-hidden="true"></span> 
-                                A confirmation email has been sent to your email address.
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div> -->
 
                 <!-- VIEW: ORDER SUCCESS -->
                 <div id="authViewOrderSuccess" class="auth-view">
@@ -904,120 +855,118 @@
                     <div class="auth-success-wrap">
 
                         <div class="auth-success-header">
+
                             <span class="icon">
                                 <span class="fas fa-circle-check" aria-hidden="true"></span>
                             </span>
+
                             <h2 class="title">Order Placed Successfully!</h2>
+
                             <p class="desc">
                                 Thank you for your order,
                                 <strong id="orderCustomerName">Retailer</strong>!
                             </p>
+
                             <p class="desc">Your order has been confirmed and is being processed.</p>
+
                         </div>
 
                         <div class="order-summary-box">
+
                             <p>
                                 <strong>Order Number:</strong>
                                 <span id="orderNumber">#ORD-2026-001</span>
                             </p>
+
                             <p>
                                 <strong>Total:</strong>
                                 <span id="orderTotal">₦97,700</span>
                             </p>
+
                             <p>
                                 <strong>Delivery:</strong>
                                 <span id="orderDelivery">Lagos (Ikeja) – Express</span>
                             </p>
+
                             <p>
                                 <strong>Estimated Delivery:</strong>
                                 <span id="orderETA">Today, 5:00 PM</span>
                             </p>
+
                         </div>
 
                         <div class="auth-success-grid">
-                            <button type="button" onclick="handleOrderContinueShopping()" class="btn btn-green btn-submit">
+
+                            <button type="button" data-auth-action="continue-shopping" class="btn btn-green btn-submit">
                                 <span class="fas fa-cart-shopping" aria-hidden="true"></span>
                                 Continue Shopping
                             </button>
-                            <button type="button" onclick="handleOrderViewHistory()" class="btn btn-outline btn-submit">
+
+                            <button type="button" data-auth-action="view-history" class="btn btn-outline btn-submit">
                                 <span class="fas fa-receipt" aria-hidden="true"></span>
                                 View Orders
                             </button>
-                            <button type="button" onclick="handleOrderDownloadInvoice()" class="btn btn-primary btn-submit">
+
+                            <button type="button" data-auth-action="download-invoice" class="btn btn-primary btn-submit">
                                 <span class="fas fa-file-invoice" aria-hidden="true"></span>
                                 Download Invoice
                             </button>
+
                         </div>
 
                         <div class="auth-success-footer">
+
                             <p class="footnote">
                                 <span class="fas fa-envelope" aria-hidden="true"></span>
                                 A confirmation email has been sent to your email address.
                             </p>
+
                         </div>
 
                     </div>
 
                 </div>                
 
-                <!-- VIEW: ORDER ERROR
-                <div id="authViewOrderError" class="auth-view" >
-
-                    <div class="auth-success-wrap">
-
-                        <div class="auth-success-header">
-                            <span class="icon"><span class="fas fa-xmark"></span></span>
-                            <h2 class="title">Order Failed</h2>
-                            <p class="desc">We're sorry, but we couldn't complete your order.</p>
-                            <p class="desc error" id="orderErrorMessage">Payment verification failed. Please try again.</p>
-                        </div>
-
-                        <div class="auth-success-grid">
-                            <button onclick="handleOrderRetry()" class="btn btn-green btn-submit">🔄 Try Again</button>
-                            <button onclick="handleOrderContactSupport()" class="btn btn-outline btn-submit">📞 Contact Support</button>
-                            <button onclick="handleOrderReturnToCart()" class="btn btn-primary btn-submit">🛒 Return to Cart</button>
-                        </div>
-
-                        <div class="auth-success-footer">
-                            <p class="footnote">If this issue persists, please contact our support team.</p>
-                        </div>
-
-                    </div>
-
-                </div> -->
-
                 <!-- VIEW: ORDER ERROR -->
                 <div id="authViewOrderError" class="auth-view">
 
-                    <div class="auth-success-wrap">
+                    <div class="auth-error-wrap">
 
-                        <div class="auth-success-header">
+                        <div class="auth-error-header">
+
                             <span class="icon icon--error">
                                 <span class="fas fa-circle-xmark" aria-hidden="true"></span>
                             </span>
+
                             <h2 class="title">Order Failed</h2>
                             <p class="desc">We're sorry, but we couldn't complete your order.</p>
+
                             <p class="desc error" id="orderErrorMessage">
                                 Payment verification failed. Please try again.
                             </p>
+
                         </div>
 
-                        <div class="auth-success-grid">
-                            <button type="button" onclick="handleOrderRetry()" class="btn btn-green btn-submit">
+                        <div class="auth-error-grid">
+
+                            <button type="button" data-auth-action="order-retry" class="btn btn-green btn-submit">
                                 <span class="fas fa-rotate-right" aria-hidden="true"></span>
                                 Try Again
                             </button>
-                            <button type="button" onclick="handleOrderContactSupport()" class="btn btn-outline btn-submit">
+
+                            <button type="button" data-auth-action="contact-support" class="btn btn-outline btn-submit">
                                 <span class="fas fa-headset" aria-hidden="true"></span>
                                 Contact Support
                             </button>
-                            <button type="button" onclick="handleOrderReturnToCart()" class="btn btn-primary btn-submit">
+
+                            <button type="button" data-auth-action="view-cart" class="btn btn-primary btn-submit">
                                 <span class="fas fa-cart-shopping" aria-hidden="true"></span>
                                 Return to Cart
                             </button>
+
                         </div>
 
-                        <div class="auth-success-footer">
+                        <div class="auth-error-footer">
                             <p class="footnote">
                                 If this issue persists, please contact our support team.
                             </p>

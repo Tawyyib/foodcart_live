@@ -1,9 +1,13 @@
 {
-  "_foodcart_hd--dLi1GWB.js": {
-    "file": "assets/js/foodcart_hd--dLi1GWB.js",
+  "_foodcart_hd-2_M7bdSt.css": {
+    "file": "assets/css/foodcart_hd-2_M7bdSt.css",
+    "src": "_foodcart_hd-2_M7bdSt.css"
+  },
+  "_foodcart_hd-BT3CpZJY.js": {
+    "file": "assets/js/foodcart_hd-BT3CpZJY.js",
     "name": "foodcart_hd",
     "css": [
-      "assets/css/foodcart_hd-DL7YUch4.css"
+      "assets/css/foodcart_hd-2_M7bdSt.css"
     ],
     "assets": [
       "assets/fonts/fa-brands-400-C99Yv4gD.woff2",
@@ -19,25 +23,25 @@
       "assets/fonts/NeulisAlt-Regular-Daju5OXl.woff2"
     ]
   },
-  "_foodcart_hd-DL7YUch4.css": {
-    "file": "assets/css/foodcart_hd-DL7YUch4.css",
-    "src": "_foodcart_hd-DL7YUch4.css"
-  },
   "_loader-4gA1zna9.js": {
     "file": "assets/js/loader-4gA1zna9.js",
     "name": "loader"
-  },
-  "assets/fontawesome-6.5.2-all.min.css": {
-    "file": "assets/css/fontawesome-6.5.2-all.min-Bo90NjKP.css",
-    "src": "assets/fontawesome-6.5.2-all.min.css"
   },
   "assets/greencarts.svg": {
     "file": "assets/images/greencarts-CdT6Zn_k.svg",
     "src": "assets/greencarts.svg"
   },
+  "assets/images/Nutragold-pr.webp": {
+    "file": "assets/images/Nutragold-pr-3t6kpL2W.webp",
+    "src": "assets/images/Nutragold-pr.webp"
+  },
   "assets/images/Nutragold-pr_5.webp": {
     "file": "assets/images/Nutragold-pr_5-DuAgSmxa.webp",
     "src": "assets/images/Nutragold-pr_5.webp"
+  },
+  "assets/images/Nutragold-pr_50.webp": {
+    "file": "assets/images/Nutragold-pr_50-XMtPOZaT.webp",
+    "src": "assets/images/Nutragold-pr_50.webp"
   },
   "assets/images/nutragold-hb-1.webp": {
     "file": "assets/images/nutragold-hb-1-BYexI9id.webp",
@@ -84,16 +88,13 @@
     "src": "assets/nutragold.svg"
   },
   "search.html": {
-    "file": "assets/js/search-D2Jtq0NM.js",
+    "file": "assets/js/search-D3G2YkhG.js",
     "name": "search",
     "src": "search.html",
     "isEntry": true,
     "imports": [
-      "_foodcart_hd--dLi1GWB.js",
+      "_foodcart_hd-BT3CpZJY.js",
       "_loader-4gA1zna9.js"
-    ],
-    "assets": [
-      "assets/css/fontawesome-6.5.2-all.min-Bo90NjKP.css"
     ]
   },
   "src/fonts/NeulisAlt-Bold.woff2": {
