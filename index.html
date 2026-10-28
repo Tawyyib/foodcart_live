@@ -4,90 +4,154 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FoodCart™ Stores — Premium Kitchen Staples</title>
-      <script type="module" crossorigin src="./assets/js/foodcart_hd-CuotNS6e.js"></script>
+      <script type="module" crossorigin src="./assets/js/foodcart_hd-zV-UCBhQ.js"></script>
       <script type="module" crossorigin src="./assets/js/loader-4gA1zna9.js"></script>
-      <link rel="stylesheet" crossorigin href="./assets/css/foodcart_hd-2_M7bdSt.css">
+      <link rel="stylesheet" crossorigin href="./assets/css/foodcart_hd-NXXDHooB.css">
     </head>
     
     <div id="header-placeholder" class="sticky-top"></div>
 
         <main class="main" >
 
-            <section class="hero">
+          <!-- Hero Section -->
+          <section class="hero-section">
+            
+            <div class="hero-container">
+              
+              <!--  Hero Main Content Container: Tier-Adaptive   -->
+              <div class="hero-content">
                 
-                <!-- 1. GUEST MODE (Visible by default) -->
-                <div id="hero-guest-view" class="hero-inner container hero-view show">
+                <div class="hero-content-inner container">
 
-                    <div class="hero-toggle-bar">
-                        <button type="button" class="hero-toggle-btn retail active" onclick="switchHeroTab('retail')">Retail</button>
-                        <button type="button" class="hero-toggle-btn wholesale" onclick="switchHeroTab('wholesale')">Wholesale</button>
-                    </div>
+                  <div class="hero-content-outlay">
 
-                    <div class="hero-col retail">
-
-                        <span class="tag tag-retail">Retail</span>
-
-                        <div class="hero-col-texts">
-                            <h1>Food Staples, Fast Delivery</h1>
-                            <p>Stock up quality Nutragold® rice, beans and garri; sourced from reputable farms, Nationwide.</p>
-                        </div>
-
-                        <a href="catalogue.html" class="btn btn-green">Shop Now →</a>
-
-                    </div>
-
-                    <div class="hero-col wholesale">
-
-                        <span class="tag tag-wholesale">Wholesale</span>
-
-                        <div class="hero-col-texts">
-                            <h1>Bulk Orders, Fair Discounts</h1>
-                            <p>Register with us, as a business, to unlock discounts and priority freights on bulk orders.</p>
-                        </div>
-
-                        <a href="register.html" class="btn btn-orange" data-auth="register" title="Apply for B2B Account">Signup Now →</a>
-
-                    </div>
-
-                </div>
-
-                <!-- 2. LOGGED-IN RETAIL MODE (Hidden by default) -->
-                <div id="hero-retail-view" class="hero-inner container hero-view hide">
-
-                    <div class="hero-col retail">
-
-                        <!-- <span class="tag tag-retail">Welcome Back</span> -->
-
-                        <div class="hero-col-texts">
-                            <h1>Quality Grains, Door Delivery</h1>
-                            <p>100% clean, stone-free Nutragold® grains; delivered straight to your doorstep.</p>                        
-                        </div>
-                            
-                        <a href="catalogue.html" class="btn btn-green">Browse Catalog →</a>
-
-                    </div>
-
-                </div>
-
-                <!-- 3. LOGGED-IN B2B WHOLESALE MODE (Hidden by default) -->
-                <div id="hero-wholesale-view" class="hero-inner container hero-view hide">
-
-                    <div class="hero-col wholesale">
-
-                        <!-- <span class="tag tag-wholesale">Exclusive Offers</span> -->
-
-                        <div class="hero-col-texts">
-                            <h1>Tiered Discounts, Priority Dispatch</h1>
-                            <p>Pallet rates across all SKUs; and priority freights to all registered business accounts.</p>
-                        </div>
-
-                        <a href="catalogue.html" class="btn btn-orange">Order Now →</a>
-
+                    <!-- Universal Trust Badge (Note 1) -->
+                    <div class="hero-badge">
+                      <span class="fas fa-bolt" aria-hidden="true"></span> 
+                      <span>Nigeria's #1 Smart Staples Marketplace</span>
                     </div>
                     
+                    <!-- Static Headline & Rotating Highlights (Note 2) -->
+                    <h1 class="hero-title">
+                      <span class="title-static">Quality staples,</span>
+                      <span class="hero-highlights" aria-live="polite" aria-atomic="true">
+                        <span class="text-highlight is-active" aria-hidden="false">direct from source.</span>
+                        <span class="text-highlight" aria-hidden="true">delivered to your door.</span>
+                        <span class="text-highlight" aria-hidden="true">at fair prices.</span>
+                      </span>
+                    </h1>
+                    
+                    <!--  Tier-specific subtitles and CTAS (Note 3)  -->
+
+                    <!-- 1. Guest Tier -->
+                    <div data-hero-context="guest" class="hero-tier-group is-active">
+
+                      <p class="hero-subtitle">
+                        Shop farm-fresh grains at unbeatable market prices. Unlock instant household savings or exclusive merchant wholesale margins.
+                      </p>
+
+                      <div class="hero-cta-block">
+
+                        <a href="catalogue.html" class="btn btn-green btn-lg">
+                          <i class="fas fa-basket-shopping" aria-hidden="true"></i> Start Shopping
+                        </a>
+
+                        <p class="hero-narrative">
+                          <a href="register.html?type=household" class="link-narrative">
+                            Create an account
+                          </a>
+                          &nbsp;to enjoy special offers and targeted discounts.                                                
+                        </p>
+
+                      </div>
+
+                    </div>
+
+                    <!-- 2. Household / Retail Tier -->
+                    <div data-hero-context="retail" class="hero-tier-group">
+
+                      <p class="hero-subtitle">
+                        Member-only discounts unlocked. Reorder and restock your daily essentials with instant checkout and fast Lagos delivery.
+                      </p>
+
+                      <div class="hero-cta-block">
+
+                        <a href="catalogue.html" class="btn btn-green btn-lg">
+                          <i class="fas fa-rotate-right" aria-hidden="true"></i> Reorder Essentials
+                        </a>
+
+                        <p class="hero-narrative">
+                          Need to manage your account?&nbsp;
+                          <a href="dashboard.html" class="link-narrative">View Order History</a>.
+                        </p>
+
+                      </div>
+
+                    </div>
+
+                    <!-- 3. Merchant / Wholesale Tier -->
+                    <div data-hero-context="wholesale" class="hero-tier-group">
+
+                      <p class="hero-subtitle">
+                        Bulk pricing, carton discounts, and priority dispatch—built for your business distribution.
+                      </p>
+
+                      <div class="hero-cta-block">
+
+                        <a href="catalogue.html?mode=bulk" class="btn btn-green btn-lg">
+                          <i class="fas fa-boxes-stacked" aria-hidden="true"></i> Access Catalog
+                        </a>
+
+                        <p class="hero-narrative">
+                          Looking for business tools?&nbsp;
+                          <a href="dashboard.html" class="link-narrative">Go to Dashboard</a>.
+                        </p>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
                 </div>
 
-            </section>
+              </div>
+
+              <!-- Hero Metrics Footer -->
+              <div class="hero-metrics">
+
+                <div class="hero-metrics-inner container">
+
+                  <div class="hero-metrics-items">
+
+                    <div class="metric-item">
+                      <strong>₦25M+</strong>
+                      <span>Saved for Buyers</span>
+                    </div>
+
+                    <div class="metric-divider"></div>
+
+                    <div class="metric-item">
+                      <strong>48hr</strong>
+                      <span>Express Delivery</span>
+                    </div>
+
+                    <div class="metric-divider"></div>
+
+                    <div class="metric-item">
+                      <strong>100%</strong>
+                      <span>Verified Quality</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </section>
 
             <!-- The Greencart Guarantee Section (Currys-Style) -->                    
             <section class="guarantee-section">
@@ -168,933 +232,931 @@
                             <p class="section-subtitle">Here is what restaurant owners, stockists, and families say about Nutragold® staples</p>
                         </div>
 
-                        <div class="featured-grid"
+                        <div class="products-grid"
                             data-render="featured"
                             data-limit="9"
                         >
+<!-- -->
+<div 
+  class="product-card"
+  data-base-sku="beans-002"
+  data-name="Nutragold® Brown Beans"
+  data-category="beans"
+  data-price-retail="11000"
+  data-price-wholesale="10500"
+  
+  
+>
 
-                            <!-- Card 1: Rice -->
-                            <div 
-                                class="product-card featured"
-                                data-base-sku="rice-001" 
-                                data-name="Nutragold® Parboiled Nigerian Rice"
-                                data-category="rice" 
-                                data-visibility="all"
-                            >
-
-                                <div class="product-card-header">
-
-                                    <picture class="product-img">
-                                        <img src="./assets/images/Nutragold-pr_5-DuAgSmxa.webp" alt="Nutragold Parboiled Nigerian Rice">
-                                    </picture>
-                                    
-                                    <span class="stock-badge in-stock">
-
-                                        <span class="fas fa-check"></span>
-
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
-
-                                    </span>
-
-                                </div>
-
-                                <div class="product-card-body">
-
-                                    <div class="product-details">
-
-                                        <h3 class="title">
-                                            Nutragold® Parboiled Nigerian Rice
-                                        </h3>
-
-                                        <div class="attrs weight-selector">
-
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="5kg" 
-                                                data-sku="rice-001-5kg" 
-                                                data-price-retail="7000" 
-                                                data-price-wholesale="6800"
-                                                data-stock="250" 
-                                            >
-                                                5kg
-                                            </span>
-
-                                            <span 
-                                                class="attr-pill weight-chip" 
-                                                data-size="10kg" 
-                                                data-sku="rice-001-10kg" 
-                                                data-price-retail="14000" 
-                                                data-price-wholesale="13500"
-                                                data-stock="180" 
-                                            >
-                                                10kg
-                                            </span>
+  <div class="product-card-header">
 
-                                            <span 
-                                                class="attr-pill weight-chip" 
-                                                data-size="25kg" 
-                                                data-sku="rice-001-25kg" 
-                                                data-price-retail="30000" 
-                                                data-price-wholesale="29000"
-                                                data-stock="120" 
-                                            >
-                                                25kg
-                                            </span>
-
-                                            <span
-                                                class="attr-pill weight-chip"
-                                                data-size="50kg" 
-                                                data-sku="rice-001-50kg" 
-                                                data-price-retail="59000" 
-                                                data-price-wholesale="57500"
-                                                data-stock="80" 
-                                            >
-                                                50kg
-                                            </span>
-
-                                        </div>
-
-                                        <div class="pricing">
-
-                                            <p class="price retail">
-                                                ₦ 7,000 – ₦ 59,000
-                                            </p>
-
-                                            <p class="price wholesale">
-                                                ₦ 6,800 – ₦ 57,500
-                                            </p>
-
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="call-to-act">
-
-                                        <button
-                                            type="button" 
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="rice-001-5kg"
-                                            data-name="Nutragold® Parboiled Nigerian Rice"
-                                        >
-                                            Add to Cart
-                                        </button>
-
-                                        <a href="ng-parboiled-rice.html" class="btn btn-primary">
-                                            View →
-                                        </a>              
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <!-- Card 2: Honey Beans -->
-                            <div 
-                                class="product-card featured"
-                                data-base-sku="beans-001" 
-                                data-name="Nutragold® Honey Beans"
-                                data-category="beans" 
-                                data-visibility="all"
-                            >
-
-                                <div class="product-card-header">
-
-                                    <picture class="product-img">
-                                        <img src="./assets/images/nutragold-hb-DfFv35wd.webp" alt="Nutragold Honey Beans">
-                                    </picture>
-
-                                    <span class="stock-badge in-stock">
-
-                                        <span class="fas fa-check"></span>
-
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
-
-                                    </span>
-
-                                </div>
-
-                                <div class="product-card-body">
-
-                                    <div class="product-details">
-
-                                        <h3 class="title">
-                                            Nutragold® Honey Beans
-                                        </h3>
-
-                                        <div class="attrs weight-selector">
-
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="5kg" 
-                                                data-sku="beans-001-5kg" 
-                                                data-price-retail="13000" 
-                                                data-price-wholesale="12500"
-                                                data-stock="250" 
-                                            >
-                                                5kg
-                                            </span>
+    <picture class="product-img">
+      <img src="assets/images/nutragold-bb.webp" alt="Nutragold Brown Beans">
+    </picture>
 
-                                            <span 
-                                                class="attr-pill weight-chip" 
-                                                data-size="10kg" 
-                                                data-sku="beans-001-10kg" 
-                                                data-price-retail="24500" 
-                                                data-price-wholesale="23000"
-                                                data-stock="180" 
-                                            >
-                                                10kg
-                                            </span>
-
-                                            <span
-                                                class="attr-pill weight-chip" 
-                                                data-size="25kg" 
-                                                data-sku="beans-001-25kg" 
-                                                data-price-retail="59000" 
-                                                data-price-wholesale="57500"
-                                                data-stock="120" 
-                                            >
-                                                25kg
-                                            </span>
-
-                                        </div>
-                                        
-                                        <div class="pricing">
-
-                                            <p class="price retail">
-                                                ₦ 13,000 – ₦ 49,000
-                                            </p>
-
-                                            <p class="price wholesale">
-                                                ₦ 12,500 – ₦ 47,500
-                                            </p>
-                                            
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="call-to-act">
-
-                                        <button
-                                            type="button"
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="beans-001-5kg" 
-                                            data-name="Nutragold® Honey Beans"
-                                        >
-                                            Add to Cart
-                                        </button>
-
-                                        <a href="ng-honey-beans.html" class="btn btn-primary">
-                                            View →
-                                        </a>         
-
-                                    </div>  
-
-                                </div>
-
-                            </div>
-                            
-                            <!-- Card 3: Brown Beans -->
-                            <div 
-                                class="product-card featured"
-                                data-base-sku="beans-002" 
-                                data-name="Nutragold® Brown Beans"
-                                data-category="beans" 
-                                data-visibility="all"
-                            >
-
-                                <div class="product-card-header">
-
-                                    <picture class="product-img">
-                                        <img src="assets/images/nutragold-bb.webp" alt="Nutragold Brown Beans">
-                                    </picture>
-
-                                    <span class="stock-badge in-stock">
-
-                                        <span class="fas fa-check"></span>
-
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
-
-                                    </span>
-
-                                </div>
-
-                                <div class="product-card-body">
-
-                                    <div class="product-details">
-
-                                        <h3 class="title">Nutragold® Brown Beans</h3>
-
-                                        <div class="attrs weight-selector">
+    <span class="stock-badge in-stock">
 
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="5kg"
-                                                data-sku="beans-002-5kg"
-                                                data-price-retail="11000"
-                                                data-price-wholesale="10500"
-                                                data-stock="250"
-                                            >
-                                            5kg
-                                        </span>
+      <span class="fas fa-check"></span>
 
-                                            <span 
-                                                class="attr-pill weight-chip"
-                                                data-size="10kg" 
-                                                data-sku="beans-002-10kg" 
-                                                data-price-retail="22000" 
-                                                data-price-wholesale="21000"
-                                                data-stock="180" 
-                                            >
-                                                10kg
-                                            </span>
-
-                                            <span
-                                                class="attr-pill weight-chip" 
-                                                data-size="25kg" 
-                                                data-sku="beans-002-25kg" 
-                                                data-price-retail="49000" 
-                                                data-price-wholesale="47500"
-                                                data-stock="80" 
-                                            >
-                                                25kg
-                                            </span>
-
-                                        </div>
-
-                                        <div class="pricing">
-
-                                            <p class="price retail">
-                                                ₦ 11,000 – ₦ 49,000
-                                            </p>
-
-                                            <p class="price wholesale">
-                                                ₦ 10,500 – ₦ 47,500
-                                            </p>
-
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="call-to-act">
-
-                                        <button
-                                            type="button" 
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="beans-002-5kg"
-                                            data-name="Nutragold® Brown Beans"
-                                        >
-                                            Add to Cart
-                                        </button>
-
-                                        <a href="ng-brown-beans.html" class="btn btn-primary">
-                                            View →
-                                        </a>          
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <!-- Card 4: Premium Garri -->
-                            <div 
-                                class="product-card featured"
-                                data-base-sku="garri-001" 
-                                data-name="Nutragold® White Garri - Premium"
-                                data-category="garri" 
-                                data-visibility="all"
-                            >
-
-                                <div class="product-card-header">
-
-                                    <picture class="product-img">
-                                        <img src="./assets/images/nutragold-pg-CrRgKMaJ.webp" alt="Nutragold White Garri Premium">
-                                    </picture>
-
-                                    <span class="stock-badge in-stock">
-
-                                        <span class="fas fa-check"></span>
-
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
-
-                                    </span>
-
-                                </div>
-
-                                <div class="product-card-body">
-
-                                    <div class="product-details">
-
-                                        <h3 class="title">
-                                            Nutragold® White Garri - Premium
-                                        </h3>
-
-                                        <div class="attrs weight-selector">
+      <span class="stock-badge__text">
+        In Stock
+      </span>
 
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="5kg" 
-                                                data-sku="garri-001-5kg" 
-                                                data-price-retail="8000" 
-                                                data-price-wholesale="7500"
-                                                data-stock="250" 
-                                            >
-                                                5kg
-                                            </span>
+    </span>
 
-                                            <span 
-                                                class="attr-pill weight-chip" 
-                                                data-size="10kg" 
-                                                data-sku="garri-001-10kg" 
-                                                data-price-retail="15000" 
-                                                data-price-wholesale="14000"
-                                                data-stock="180" 
-                                                >
-                                                    10kg
-                                                </span>
-
-                                            <span 
-                                                class="attr-pill weight-chip" 
-                                                data-size="25kg" 
-                                                data-sku="garri-001-25kg" 
-                                                data-price-retail="35000" 
-                                                data-price-wholesale="33500"
-                                                data-stock="120" 
-                                            >
-                                                25kg
-                                            </span>
-
-                                        </div>
-
-                                        <div class="pricing">
-
-                                            <p class="price retail">
-                                                ₦ 8,000 – ₦ 76,000
-                                            </p>
-
-                                            <p class="price wholesale">
-                                                ₦ 7,500 – ₦ 73,000
-                                            </p>
-
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="call-to-act">
-
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="garri-001-5kg"
-                                            data-name="Nutragold® White Garri - Premium"
-                                        >
-                                            Add to Cart
-                                        </button>
-
-                                        <a href="ng-white-garri-p.html" class="btn btn-primary">
-                                            View →
-                                        </a>   
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <!-- Card 5: Standard Garri -->
-                            <div 
-                                class="product-card featured"
-                                data-base-sku="garri-002" 
-                                data-name="Nutragold® White Garri - Standard"
-                                data-category="garri" 
-                                data-visibility="all"
-                            >
-
-                                <div class="product-card-header">
-
-                                    <picture class="product-img">
-                                        <img src="./assets/images/nutragold-sg-BLz-AeVA.webp" alt="Nutragold White Garri Standard">
-                                    </picture>
-
-                                    <span class="stock-badge in-stock">
-
-                                        <span class="fas fa-check"></span>
-
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
-
-                                    </span>
-
-                                </div>
-
-                                <div class="product-card-body">
-
-                                    <div class="product-details">
-
-                                        <h3 class="title">
-                                            Nutragold® White Garri - Standard
-                                        </h3>
-
-                                        <div class="attrs weight-selector">
-
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="5kg" 
-                                                data-sku="garri-002-5kg" 
-                                                data-price-retail="6000" 
-                                                data-price-wholesale="5500"
-                                                data-stock="250" 
-                                            >
-                                                5kg
-                                            </span>
-
-                                            <span 
-                                                class="attr-pill weight-chip" 
-                                                data-stock="250" 
-                                                data-size="10kg" 
-                                                data-sku="garri-002-10kg" 
-                                                data-price-retail="12000" 
-                                                data-price-wholesale="11000"
-                                            >
-                                                10kg
-                                            </span>
-
-                                            <span 
-                                                class="attr-pill weight-chip" 
-                                                data-stock="250" 
-                                                data-size="25kg" 
-                                                data-sku="garri-002-25kg" 
-                                                data-price-retail="19000" 
-                                                data-price-wholesale="17500"
-                                                >
-                                                    25kg
-                                                </span>
-
-                                        </div>
-                                        
-                                        <div class="pricing">
-
-                                            <p class="price retail">
-                                                ₦ 6,000 – ₦ 46,000
-                                            </p>
+  </div>
 
-                                            <p class="price wholesale">
-                                                ₦ 5,500 – ₦ 43,500
-                                            </p>
+  <div class="product-card-body">
 
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
+    <div class="product-details">
 
-                                        </div>
-
-                                    </div>
-
-                                    <div class="call-to-act">
-
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="garri-002-5kg"
-                                            data-name="Nutragold® White Garri - Standard"
-                                        >
-                                            Add to Cart
-                                        </button>
+      <h3 class="title">
+        Nutragold® Brown Beans
+      </h3>
 
-                                        <a href="ng-white-garri-s.html" class="btn btn-primary">
-                                            View →
-                                        </a>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <!-- Card 6: Bulk Honey Beans -->
-                            <div 
-                                class="product-card featured"
-                                data-base-sku="beans-b001" 
-                                data-name="Nutragold® Bulky Honey Beans"
-                                data-category="beans" 
-                                data-visibility="wholesale"
-                            >
+      <div class="attrs weight-selector">
 
-                                <div class="product-card-header">
 
-                                    <picture class="product-img">
-                                        <img src="./assets/images/nutragold-hb-DfFv35wd.webp" alt="Nutragold Bulky Honey Beans">
-                                    </picture>
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="5kg"
+            data-sku="beans-002-5kg"
+          >
+            5kg
+          </span>
 
-                                    <span class="stock-badge in-stock">
 
-                                        <span class="fas fa-check"></span>
 
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
+          <span 
+            class="attr-pill weight-chip"
+            data-size="10kg"
+            data-sku="beans-002-10kg"
+          >
+            10kg
+          </span>
 
-                                    </span>
-                                    
-                                </div>
 
-                                <div class="product-card-body">
 
-                                    <div class="product-details">
+          <span 
+            class="attr-pill weight-chip"
+            data-size="25kg"
+            data-sku="beans-002-25kg"
+          >
+            25kg
+          </span>
 
-                                        <h3 class="title">
-                                            Nutragold® Bulky Honey Beans
-                                        </h3>
 
-                                        <div class="attrs weight-selector">
 
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="Bulk" 
-                                                data-sku="beans-b001" 
-                                                data-price-retail="111000" 
-                                                data-price-wholesale="107500" 
-                                                data-stock="80" 
-                                            >
-                                                Bulk Bag
-                                            </span>
+      </div>
 
-                                        </div>
+      <div class="pricing">
 
-                                        <div class="pricing">
+        <p class="price retail">
+          ₦ 11,000 – ₦ 49,000
+        </p>
 
-                                            <p class="price retail">
-                                                ₦ 111,000
-                                            </p>
+        <p class="price wholesale">
+          ₦ 10,500 – ₦ 47,500
+        </p>
 
-                                            <p class="price wholesale">
-                                                ₦ 107,500
-                                            </p>
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
 
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
+      </div>
 
-                                        </div>
+    </div>
 
-                                    </div>
+    <div class="call-to-act">
 
-                                    <div class="call-to-act">
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="beans-002-5kg"
+        data-name="Nutragold® Brown Beans"
+      >Add to Cart</button>
 
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="beans-b001"
-                                            data-name="Nutragold® Bulky Honey Beans"
-                                        >
-                                            Add to Cart
-                                        </button>
+      <a 
+        href="ng-brown-beans.html"
+        class="btn btn-primary"
+      >View →</a>
 
-                                        <a href="ng-honey-beans-b.html" class="btn btn-primary">
-                                            View →
-                                        </a>         
+    </div>
 
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            
-                            <!-- Card 7: Bulk Brown Beans -->
-                            <div 
-                                class="product-card featured"
-                                data-base-sku="beans-b002" 
-                                data-name="Nutragold® Bulky Brown Beans"
-                                data-category="beans" 
-                                data-visibility="wholesale"
-                            >
+  </div>
 
-                                <div class="product-card-header">
+</div>
+<!-- -->
+<div 
+  class="product-card wholesale"
+  data-base-sku="beans-b002"
+  data-name="Nutragold® Bulky Brown Beans"
+  data-category="beans"
+  data-price-retail="101000"
+  data-price-wholesale="97500"
+  data-visibility="registered"
+  
+>
 
-                                    <picture class="product-img">
-                                        <img src="assets/images/nutragold-bb.webp" alt="Nutragold Bulky Brown Beans">
-                                    </picture>
+  <div class="product-card-header">
 
-                                    <span class="stock-badge in-stock">
+    <picture class="product-img">
+      <img src="assets/images/nutragold-bb.webp" alt="Nutragold Bulky Brown Beans">
+    </picture>
 
-                                        <span class="fas fa-box"></span>
+    <span class="stock-badge in-stock">
 
-                                         <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
+      <span class="fas fa-check"></span>
 
-                                    </span>
+      <span class="stock-badge__text">
+        In Stock
+      </span>
 
-                                </div>
+    </span>
 
-                                <div class="product-card-body">
+  </div>
 
-                                    <div class="product-details">
+  <div class="product-card-body">
 
-                                        <h3 class="title">
-                                            Nutragold® Bulky Brown Beans
-                                        </h3>
+    <div class="product-details">
 
-                                        <div class="attrs weight-selector">
+      <h3 class="title">
+        Nutragold® Bulky Brown Beans
+      </h3>
 
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="Bulk" 
-                                                data-sku="beans-b002" 
-                                                data-price-retail="101000" 
-                                                data-price-wholesale="97500" 
-                                                data-stock="80" 
-                                            >
-                                                Bulk Bag
-                                            </span>
-                                            
-                                        </div>
+      <div class="attrs weight-selector">
 
-                                        <div class="pricing">
 
-                                            <p class="price retail">
-                                                ₦ 101,000
-                                            </p>
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="Bulk"
+            data-sku="beans-b002"
+          >
+            Bulk
+          </span>
 
-                                            <p class="price wholesale">
-                                                ₦ 97,500
-                                            </p>
 
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
 
-                                        </div>
+      </div>
 
-                                    </div>
+      <div class="pricing">
 
-                                    <div class="call-to-act">
+        <p class="price retail">
+          ₦ 101,000
+        </p>
 
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="beans-b002"
-                                            data-name="Nutragold® Bulky Brown Beans"
-                                        >
-                                            Add to Cart
-                                        </button>
+        <p class="price wholesale">
+          ₦ 97,500
+        </p>
 
-                                        <a href="ng-brown-beans-b.html" class="btn btn-primary">
-                                            View →
-                                        </a>
-                                        
-                                    </div>
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
 
-                                </div>
+      </div>
 
-                            </div>
-                            
-                            <!-- Card 8: Bulk Premium Garri -->
-                            <div 
-                                class="product-card featured"
-                                data-base-sku="garri-b001" 
-                                data-name="Nutragold® Bulky White Garri - Premium"
-                                data-category="garri" 
-                                data-visibility="wholesale"
-                            >
+    </div>
 
-                                <div class="product-card-header">
+    <div class="call-to-act">
 
-                                    <picture class="product-img">
-                                        <img src="./assets/images/nutragold-pg-CrRgKMaJ.webp" alt="Nutragold Bulky White Garri Premium">
-                                    </picture>
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="beans-b002"
+        data-name="Nutragold® Bulky Brown Beans"
+      >Add to Cart</button>
 
-                                    <span class="stock-badge in-stock">
+      <a 
+        href="ng-brown-beans-b.html"
+        class="btn btn-primary"
+      >View →</a>
 
-                                        <span class="fas fa-check"></span>
+    </div>
 
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
+  </div>
 
-                                    </span>
+</div>
+<!-- -->
+<div 
+  class="product-card wholesale"
+  data-base-sku="beans-b001"
+  data-name="Nutragold® Bulky Honey Beans"
+  data-category="beans"
+  data-price-retail="111000"
+  data-price-wholesale="107500"
+  data-visibility="registered"
+  
+>
 
-                                </div>
+  <div class="product-card-header">
 
-                                <div class="product-card-body">
+    <picture class="product-img">
+      <img src="./assets/images/nutragold-hb-DfFv35wd.webp" alt="Nutragold Bulky Honey Beans">
+    </picture>
 
-                                    <div class="product-details">
+    <span class="stock-badge in-stock">
 
-                                        <h3 class="title">
-                                            Nutragold® Bulky White Garri - Premium
-                                        </h3>
+      <span class="fas fa-check"></span>
 
-                                        <div class="attrs weight-selector">
+      <span class="stock-badge__text">
+        In Stock
+      </span>
 
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="Bulk" 
-                                                data-sku="garri-b001" 
-                                                data-price-retail="76000" 
-                                                data-price-wholesale="73500" 
-                                                data-stock="80" 
-                                            >
-                                                Bulk Bag
-                                            </span>
-                                            
-                                        </div>
+    </span>
 
-                                        <div class="pricing">
+  </div>
 
-                                            <p class="price retail">
-                                                ₦ 76,000
-                                            </p>
+  <div class="product-card-body">
 
-                                            <p class="price wholesale">
-                                                ₦ 73,500
-                                            </p>
+    <div class="product-details">
 
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
+      <h3 class="title">
+        Nutragold® Bulky Honey Beans
+      </h3>
 
-                                        </div>
+      <div class="attrs weight-selector">
 
-                                    </div>
 
-                                    <div class="call-to-act">
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="Bulk"
+            data-sku="beans-b001"
+          >
+            Bulk
+          </span>
 
-                                        <button
-                                            type="button" 
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="garri-b001" 
-                                            data-name="Nutragold® Bulky White Garri - Premium"
-                                        >
-                                            Add to Cart
-                                        </button>
 
-                                        <a href="ng-white-garri-pb.html" class="btn btn-primary">
-                                            View →
-                                        </a>
 
-                                    </div>
+      </div>
 
-                                </div>
+      <div class="pricing">
 
-                            </div>
+        <p class="price retail">
+          ₦ 111,000
+        </p>
 
-                            <!-- Card 9: Bulk Standard Garri -->
-                            <div 
-                                class="product-card featured"
-                                data-base-sku="garri-b002" 
-                                data-name="Nutragold® Bulky White Garri - Standard"
-                                data-category="garri" 
-                                data-visibility="registered"
-                                data-visibility="wholesale"
-                            >
+        <p class="price wholesale">
+          ₦ 107,500
+        </p>
 
-                                <div class="product-card-header">
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
 
-                                    <picture class="product-img">
-                                        <img src="./assets/images/nutragold-sg-BLz-AeVA.webp" alt="Nutragold Bulky White Garri Standard">
-                                    </picture>
+      </div>
 
-                                    <span class="stock-badge in-stock">
+    </div>
 
-                                        <span class="fas fa-box"></span>
+    <div class="call-to-act">
 
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="beans-b001"
+        data-name="Nutragold® Bulky Honey Beans"
+      >Add to Cart</button>
 
-                                    </span>
+      <a 
+        href="ng-honey-beans-b.html"
+        class="btn btn-primary"
+      >View →</a>
 
-                                </div>
+    </div>
 
-                                <div class="product-card-body">
+  </div>
 
-                                    <div class="product-details">
+</div>
+<!-- -->
+<div 
+  class="product-card wholesale"
+  data-base-sku="garri-b001"
+  data-name="Nutragold® Bulky White Garri - Premium"
+  data-category="garri"
+  data-price-retail="76000"
+  data-price-wholesale="73000"
+  data-visibility="registered"
+  
+>
 
-                                        <h3 class="title">
-                                            Nutragold® Bulky White Garri - Standard
-                                        </h3>
+  <div class="product-card-header">
 
-                                        <div class="attrs weight-selector">
+    <picture class="product-img">
+      <img src="./assets/images/nutragold-pg-CrRgKMaJ.webp" alt="Nutragold Bulky White Garri Premium">
+    </picture>
 
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="Bulk" 
-                                                data-sku="garri-b002" 
-                                                data-price-retail="46000"
-                                                data-price-wholesale="43500"
-                                                data-stock="80" 
-                                            >
-                                                Bulk Bag
-                                            </span>
+    <span class="stock-badge in-stock">
 
-                                        </div>
+      <span class="fas fa-check"></span>
 
-                                        <div class="pricing">
+      <span class="stock-badge__text">
+        In Stock
+      </span>
 
-                                            <p class="price retail">
-                                                ₦ 46,000
-                                            </p>
-                                            
-                                            <p class="price wholesale">
-                                                ₦ 43,500
-                                            </p>
-                                            
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
-                                            
-                                        </div>
+    </span>
 
-                                    </div>
+  </div>
 
-                                    <div class="call-to-act">
+  <div class="product-card-body">
 
-                                        <button
-                                            type="button" 
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="garri-b002" 
-                                            data-name="Nutragold® Bulky White Garri - Standard"
-                                        >
-                                            Add to Cart
-                                        </button>
+    <div class="product-details">
 
-                                        <a href="ng-white-garri-sb.html" class="btn btn-primary">
-                                            View →
-                                        </a>          
+      <h3 class="title">
+        Nutragold® Bulky White Garri - Premium
+      </h3>
 
-                                    </div>
+      <div class="attrs weight-selector">
 
-                                </div>
 
-                            </div>
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="Bulk"
+            data-sku="garri-b001"
+          >
+            Bulk
+          </span>
 
-                        </div>
+
+
+      </div>
+
+      <div class="pricing">
+
+        <p class="price retail">
+          ₦ 76,000
+        </p>
+
+        <p class="price wholesale">
+          ₦ 73,000
+        </p>
+
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
+
+      </div>
+
+    </div>
+
+    <div class="call-to-act">
+
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="garri-b001"
+        data-name="Nutragold® Bulky White Garri - Premium"
+      >Add to Cart</button>
+
+      <a 
+        href="ng-white-garri-pb.html"
+        class="btn btn-primary"
+      >View →</a>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- -->
+<div 
+  class="product-card wholesale"
+  data-base-sku="garri-b002"
+  data-name="Nutragold® Bulky White Garri - Standard"
+  data-category="garri"
+  data-price-retail="46000"
+  data-price-wholesale="43500"
+  data-visibility="registered"
+  
+>
+
+  <div class="product-card-header">
+
+    <picture class="product-img">
+      <img src="./assets/images/nutragold-sg-BLz-AeVA.webp" alt="Nutragold Bulky White Garri Standard">
+    </picture>
+
+    <span class="stock-badge in-stock">
+
+      <span class="fas fa-check"></span>
+
+      <span class="stock-badge__text">
+        In Stock
+      </span>
+
+    </span>
+
+  </div>
+
+  <div class="product-card-body">
+
+    <div class="product-details">
+
+      <h3 class="title">
+        Nutragold® Bulky White Garri - Standard
+      </h3>
+
+      <div class="attrs weight-selector">
+
+
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="Bulk"
+            data-sku="garri-b002"
+          >
+            Bulk
+          </span>
+
+
+
+      </div>
+
+      <div class="pricing">
+
+        <p class="price retail">
+          ₦ 46,000
+        </p>
+
+        <p class="price wholesale">
+          ₦ 43,500
+        </p>
+
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
+
+      </div>
+
+    </div>
+
+    <div class="call-to-act">
+
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="garri-b002"
+        data-name="Nutragold® Bulky White Garri - Standard"
+      >Add to Cart</button>
+
+      <a 
+        href="ng-white-garri-sb.html"
+        class="btn btn-primary"
+      >View →</a>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- -->
+<div 
+  class="product-card"
+  data-base-sku="beans-001"
+  data-name="Nutragold® Honey Beans"
+  data-category="beans"
+  data-price-retail="13000"
+  data-price-wholesale="12500"
+  
+  
+>
+
+  <div class="product-card-header">
+
+    <picture class="product-img">
+      <img src="./assets/images/nutragold-hb-DfFv35wd.webp" alt="Nutragold Honey Beans">
+    </picture>
+
+    <span class="stock-badge in-stock">
+
+      <span class="fas fa-check"></span>
+
+      <span class="stock-badge__text">
+        In Stock
+      </span>
+
+    </span>
+
+  </div>
+
+  <div class="product-card-body">
+
+    <div class="product-details">
+
+      <h3 class="title">
+        Nutragold® Honey Beans
+      </h3>
+
+      <div class="attrs weight-selector">
+
+
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="5kg"
+            data-sku="beans-001-5kg"
+          >
+            5kg
+          </span>
+
+
+
+          <span 
+            class="attr-pill weight-chip"
+            data-size="10kg"
+            data-sku="beans-001-10kg"
+          >
+            10kg
+          </span>
+
+
+
+          <span 
+            class="attr-pill weight-chip"
+            data-size="25kg"
+            data-sku="beans-001-25kg"
+          >
+            25kg
+          </span>
+
+
+
+      </div>
+
+      <div class="pricing">
+
+        <p class="price retail">
+          ₦ 13,000 – ₦ 59,000
+        </p>
+
+        <p class="price wholesale">
+          ₦ 12,500 – ₦ 57,500
+        </p>
+
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
+
+      </div>
+
+    </div>
+
+    <div class="call-to-act">
+
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="beans-001-5kg"
+        data-name="Nutragold® Honey Beans"
+      >Add to Cart</button>
+
+      <a 
+        href="ng-honey-beans.html"
+        class="btn btn-primary"
+      >View →</a>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- -->
+<div 
+  class="product-card"
+  data-base-sku="rice-001"
+  data-name="Nutragold® Parboiled Nigerian Rice"
+  data-category="rice"
+  data-price-retail="7000"
+  data-price-wholesale="6800"
+  
+  
+>
+
+  <div class="product-card-header">
+
+    <picture class="product-img">
+      <img src="assets/images/nutragold-pr.webp" alt="Nutragold Parboiled Nigerian Rice">
+    </picture>
+
+    <span class="stock-badge in-stock">
+
+      <span class="fas fa-check"></span>
+
+      <span class="stock-badge__text">
+        In Stock
+      </span>
+
+    </span>
+
+  </div>
+
+  <div class="product-card-body">
+
+    <div class="product-details">
+
+      <h3 class="title">
+        Nutragold® Parboiled Nigerian Rice
+      </h3>
+
+      <div class="attrs weight-selector">
+
+
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="5kg"
+            data-sku="rice-001-5kg"
+          >
+            5kg
+          </span>
+
+
+
+          <span 
+            class="attr-pill weight-chip"
+            data-size="10kg"
+            data-sku="rice-001-10kg"
+          >
+            10kg
+          </span>
+
+
+
+          <span 
+            class="attr-pill weight-chip"
+            data-size="25kg"
+            data-sku="rice-001-25kg"
+          >
+            25kg
+          </span>
+
+
+
+          <span 
+            class="attr-pill weight-chip"
+            data-size="50kg"
+            data-sku="rice-001-50kg"
+          >
+            50kg
+          </span>
+
+
+
+      </div>
+
+      <div class="pricing">
+
+        <p class="price retail">
+          ₦ 7,000 – ₦ 59,000
+        </p>
+
+        <p class="price wholesale">
+          ₦ 6,800 – ₦ 57,000
+        </p>
+
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
+
+      </div>
+
+    </div>
+
+    <div class="call-to-act">
+
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="rice-001-5kg"
+        data-name="Nutragold® Parboiled Nigerian Rice"
+      >Add to Cart</button>
+
+      <a 
+        href="ng-parboiled-rice.html"
+        class="btn btn-primary"
+      >View →</a>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- -->
+<div 
+  class="product-card"
+  data-base-sku="garri-001"
+  data-name="Nutragold® White Garri - Premium"
+  data-category="garri"
+  data-price-retail="8000"
+  data-price-wholesale="7500"
+  
+  
+>
+
+  <div class="product-card-header">
+
+    <picture class="product-img">
+      <img src="./assets/images/nutragold-pg-CrRgKMaJ.webp" alt="Nutragold White Garri Premium">
+    </picture>
+
+    <span class="stock-badge in-stock">
+
+      <span class="fas fa-check"></span>
+
+      <span class="stock-badge__text">
+        In Stock
+      </span>
+
+    </span>
+
+  </div>
+
+  <div class="product-card-body">
+
+    <div class="product-details">
+
+      <h3 class="title">
+        Nutragold® White Garri - Premium
+      </h3>
+
+      <div class="attrs weight-selector">
+
+
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="5kg"
+            data-sku="garri-001-5kg"
+          >
+            5kg
+          </span>
+
+
+
+          <span 
+            class="attr-pill weight-chip"
+            data-size="10kg"
+            data-sku="garri-001-10kg"
+          >
+            10kg
+          </span>
+
+
+
+          <span 
+            class="attr-pill weight-chip"
+            data-size="25kg"
+            data-sku="garri-001-25kg"
+          >
+            25kg
+          </span>
+
+
+
+      </div>
+
+      <div class="pricing">
+
+        <p class="price retail">
+          ₦ 8,000 – ₦ 35,000
+        </p>
+
+        <p class="price wholesale">
+          ₦ 7,500 – ₦ 33,500
+        </p>
+
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
+
+      </div>
+
+    </div>
+
+    <div class="call-to-act">
+
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="garri-001-5kg"
+        data-name="Nutragold® White Garri - Premium"
+      >Add to Cart</button>
+
+      <a 
+        href="ng-white-garri-p.html"
+        class="btn btn-primary"
+      >View →</a>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- -->
+<div 
+  class="product-card"
+  data-base-sku="garri-002"
+  data-name="Nutragold® White Garri - Standard"
+  data-category="garri"
+  data-price-retail="6000"
+  data-price-wholesale="5500"
+  
+  
+>
+
+  <div class="product-card-header">
+
+    <picture class="product-img">
+      <img src="./assets/images/nutragold-sg-BLz-AeVA.webp" alt="Nutragold White Garri Standard">
+    </picture>
+
+    <span class="stock-badge in-stock">
+
+      <span class="fas fa-check"></span>
+
+      <span class="stock-badge__text">
+        In Stock
+      </span>
+
+    </span>
+
+  </div>
+
+  <div class="product-card-body">
+
+    <div class="product-details">
+
+      <h3 class="title">
+        Nutragold® White Garri - Standard
+      </h3>
+
+      <div class="attrs weight-selector">
+
+
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="5kg"
+            data-sku="garri-002-5kg"
+          >
+            5kg
+          </span>
+
+
+
+          <span 
+            class="attr-pill weight-chip"
+            data-size="10kg"
+            data-sku="garri-002-10kg"
+          >
+            10kg
+          </span>
+
+
+
+          <span 
+            class="attr-pill weight-chip"
+            data-size="25kg"
+            data-sku="garri-002-25kg"
+          >
+            25kg
+          </span>
+
+
+
+      </div>
+
+      <div class="pricing">
+
+        <p class="price retail">
+          ₦ 6,000 – ₦ 19,000
+        </p>
+
+        <p class="price wholesale">
+          ₦ 5,500 – ₦ 17,500
+        </p>
+
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
+
+      </div>
+
+    </div>
+
+    <div class="call-to-act">
+
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="garri-002-5kg"
+        data-name="Nutragold® White Garri - Standard"
+      >Add to Cart</button>
+
+      <a 
+        href="ng-white-garri-s.html"
+        class="btn btn-primary"
+      >View →</a>
+
+    </div>
+
+  </div>
+
+</div>
+</div>
 
                     </section>
 
@@ -1152,928 +1214,618 @@
                     <!-- ============================================ -->
                     <!-- PROMOTIONAL AD BANNER -->
                     <!-- ============================================ -->
-                    <section class="promo-banner">
+                    <section class="ad-banner">
+                        <div class="ad-banner-inner">
 
-                        <div class="promo-banner-card">
-
-                            <div class="promo-content">
-
-                                <!-- Left: Copy -->
-                                <div class="promo-copy">
-                                    <span class="promo-badge">Limited Time Offer</span>
-
-                                    <div class="promo-offer">
-                                        <h2 class="promo-offer-title">Stock Up &amp; Save Big on Bulk Orders!</h2>
-                                        <p class="promo-offer-context">
-                                            Register as a verified retailer today to unlock tiered factory
-                                            pricing and priority Lagos freight on 10+ bag orders.
-                                        </p>
-                                    </div>
-
-                                    <div class="promo-actions">
-                                        <a href="#register" class="btn btn-warning">Register Business</a>
-                                        <span class="promo-note">⚡ Free Lagos Delivery on Orders Above ₦250,000</span>
-                                    </div>
+                          <!-- 1. Guest / Upsell -->
+                          <div class="ad-content guest" data-ad-tier="guest">
+                            <div class="ad-content-board">
+                              <span class="ad-content__badge">Limited Time Offer</span>
+                              <div class="ad-content__offer">
+                                <h2 class="title">Stock-up and save big on bulk orders!</h2>
+                                <p class="desc">Create a merchant account today and unlock tiered warehouse pricing and priority Lagos freight on 50+ bag orders.</p>
+                              </div>
+                              <div class="ad-actions">
+                                <a href="register.html?type=merchant" class="btn btn-ad">Create Merchant Account</a>
+                                <div class="ad-trust">
+                                  <span class="fas fa-truck-fast" aria-hidden="true"></span> 
+                                  <span>Get free Standard delivery on all Lagos orders above ₦250,000.</span> 
                                 </div>
-
-                                <!-- Right: Image -->
-                                <div class="promo-image">
-                                    <picture>
-                                        <source
-                                            srcset="./assets/images/nutragold-stacks-2-BgSXjAL4.webp"
-                                            type="image/webp"
-                                        >
-                                        <img
-                                            src="./assets/images/nutragold-stacks-2-BgSXjAL4.webp"
-                                            alt="Stacked Nutragold rice bags ready for bulk delivery"
-                                            loading="lazy"
-                                        >
-                                    </picture>
-                                </div>
-
+                              </div>
                             </div>
+                          </div>
+
+                          <!-- 2. Household / Retail (logged in) -->
+                          <div class="ad-content retail" data-ad-tier="retail">
+                            <div class="ad-content-board">
+                              <span class="ad-content__badge badge-purple">Upgrade Your Account</span>
+                              <div class="ad-content__offer">
+                                <h2 class="title">Take further advantage &amp; unlock trade pricing.</h2>
+                                <p class="desc">Upgrade to a Merchant account to access wholesale pricing, bulk shipping rates, and priority dispatch.</p>
+                              </div>
+                              <div class="ad-actions">
+                                <a href="register.html?type=merchant" class="btn btn-ad">Upgrade Account</a>
+                                <div class="ad-trust">
+                                  <span class="fas fa-check-circle" aria-hidden="true"></span> 
+                                  <span>Switch in 2 minutes. Keep your current order history.</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- 3. Merchant / Wholesale (logged-in) -->
+                          <div class="ad-content wholesale" data-ad-tier="wholesale">
+                            <div class="ad-content-board">
+                              <span class="ad-content__badge badge-blue">Expand Your Shelf</span>
+                              <div class="ad-content__offer">
+                                <h2 class="title">Add retail packs to your next pallet.</h2>
+                                <p class="desc">Complement your bulk order with our 5kg, 10kg, and 25kg branded retail packs. Same great factory rates, ready for the shelf.</p>
+                              </div>
+                              <div class="ad-actions">
+                                <a href="catalogue.html" class="btn btn-ad">Browse Retail Packs</a>
+                                <span class="ad-trust">
+                                  <span class="fas fa-boxes-stacked" aria-hidden="true"></span> 
+                                  <span>Retail pricing automatically applies to your account.</span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
 
                         </div>
-                        
                     </section>
 
                     <!-- NEW: BESTSELLING PRODUCTS-->
-                    <section class="section bestselling">
+                    <div class="products-grid products-rail"
+                        data-render="bestsellers"
+                        data-limit="9"
+                    >
+<!-- -->
+<div 
+  class="product-card bestseller"
+  data-base-sku="beans-002"
+  data-name="Nutragold® Brown Beans"
+  data-category="beans"
+  data-price-retail="11000"
+  data-price-wholesale="10500"
+  
+  data-bestseller-size="5kg"
+>
 
-                        <!-- Products -->
-                         <div class="section-header">
-                            <h2 class="section-title">Best Selling Products</h2>
-                            <p class="section-subtitle">Here is what restaurant owners, stockists, and families are stocking from Nutragold® staples</p>
-                         </div>
+  <div class="product-card-header">
 
-                        <div class="products-grid products-rail"
-                            data-render="bestsellers"
-                            data-limit="9"
-                        >
+    <picture class="product-img">
+      <img src="assets/images/nutragold-bb.webp" alt="Nutragold Brown Beans">
+    </picture>
 
-                            <!-- Bestseller 1: 5kg Rice -->
-                            <div 
-                                class="product-card bestseller"
-                                data-base-sku="rice-001" 
-                                data-name="Nutragold® Parboiled Nigerian Rice"
-                                data-category="rice" 
-                                data-visibility="all"
-                                data-bestseller-size="5kg"
-                            >
+    <span class="stock-badge in-stock">
 
-                                <div class="product-card-header">
+      <span class="fas fa-check"></span>
 
-                                    <picture class="product-img">
-                                        <img src="./assets/images/Nutragold-pr_5-DuAgSmxa.webp" alt="Nutragold Parboiled Nigerian Rice">
-                                    </picture>
+      <span class="stock-badge__text">
+        In Stock
+      </span>
 
-                                    <span class="stock-badge in-stock">
+    </span>
 
-                                        <span class="fas fa-check"></span>
+  </div>
 
-                                         <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
+  <div class="product-card-body">
 
-                                    </span>
+    <div class="product-details">
 
-                                </div>
+      <h3 class="title">
+        Nutragold® Brown Beans
+      </h3>
 
-                                <div class="product-card-body">
+      <div class="attrs weight-selector">
 
-                                    <div class="product-details">
 
-                                        <h3 class="title">
-                                            Nutragold® Parboiled Nigerian Rice
-                                        </h3>
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="5kg"
+            data-sku="beans-002-5kg"
+          >
+            5kg
+          </span>
 
-                                        <div class="attrs weight-selector bestseller-variant">
+            <span class="bestseller-chip fas fa-star" aria-hidden="true"></span>
 
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="5kg"
-                                                data-sku="rice-001-5kg"
-                                                data-price-retail="7000"
-                                                data-price-wholesale="6800"
-                                                data-stock="250"
-                                            >
-                                                5kg
-                                            </span>
 
-                                            <span 
-                                                class="bestseller-chip fas fa-star" 
-                                                aria-hidden="true"></span>
+      </div>
 
-                                        </div>
+      <div class="pricing">
 
-                                        <div class="pricing">
+        <p class="price retail">
+          ₦ 11,000
+        </p>
 
-                                            <p class="price retail">
-                                                ₦ 7,000
-                                            </p>
+        <p class="price wholesale">
+          ₦ 10,500
+        </p>
 
-                                            <p class="price wholesale">
-                                                ₦ 6,800
-                                            </p>
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
 
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
+      </div>
 
-                                        </div>
+    </div>
 
-                                    </div>
+    <div class="call-to-act">
 
-                                    <div class="call-to-act">
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="beans-002-5kg"
+        data-name="Nutragold® Brown Beans"
+      >Add to Cart</button>
 
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="rice-001-5kg"
-                                            data-name="Nutragold® Parboiled Nigerian Rice"
-                                        >
-                                            Add to Cart
-                                        </button>
+      <a 
+        href="ng-brown-beans.html?size=5kg"
+        class="btn btn-primary"
+      >View →</a>
 
-                                        <a 
-                                            href="ng-parboiled-rice.html?size=5kg"
-                                            class="btn btn-primary"
-                                        >
-                                            View →
-                                        </a>
+    </div>
 
-                                    </div>
+  </div>
 
-                                </div>
+</div>
+<!-- -->
+<div 
+  class="product-card bestseller wholesale"
+  data-base-sku="beans-b002"
+  data-name="Nutragold® Bulky Brown Beans"
+  data-category="beans"
+  data-price-retail="101000"
+  data-price-wholesale="97500"
+  data-visibility="registered"
+  data-bestseller-size="Bulk"
+>
 
-                            </div>
+  <div class="product-card-header">
 
-                            <!-- Bestseller 2: 10kg Honey Beans -->
-                            <div 
-                                class="product-card bestseller"
-                                data-base-sku="beans-001" 
-                                data-name="Nutragold® Honey Beans"
-                                data-category="beans" 
-                                data-visibility="all"
-                                data-bestseller-size="10kg"
-                            >
+    <picture class="product-img">
+      <img src="assets/images/nutragold-bb.webp" alt="Nutragold Bulky Brown Beans">
+    </picture>
 
-                                <div class="product-card-header">
+    <span class="stock-badge in-stock">
 
-                                    <picture class="product-img">
-                                        <img src="./assets/images/nutragold-hb-DfFv35wd.webp" alt="Nutragold Honey Beans">
-                                    </picture>
+      <span class="fas fa-check"></span>
 
-                                    <span class="stock-badge in-stock">
+      <span class="stock-badge__text">
+        In Stock
+      </span>
 
-                                        <span class="fas fa-check"></span>
+    </span>
 
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
+  </div>
 
-                                    </span>
+  <div class="product-card-body">
 
-                                </div>
+    <div class="product-details">
 
-                                <div class="product-card-body">
+      <h3 class="title">
+        Nutragold® Bulky Brown Beans
+      </h3>
 
-                                    <div class="product-details">
+      <div class="attrs weight-selector">
 
-                                        <h3 class="title">
-                                            Nutragold® Honey Beans
-                                        </h3>
 
-                                        <div class="attrs weight-selector">
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="Bulk"
+            data-sku="beans-b002"
+          >
+            Bulk
+          </span>
 
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="10kg" 
-                                                data-sku="beans-001-10kg"
-                                                data-price-retail="24500" 
-                                                data-price-wholesale="23000"
-                                                data-stock="250" 
-                                            >
-                                                10kg
-                                            </span>
+            <span class="bestseller-chip fas fa-star" aria-hidden="true"></span>
 
-                                            <span 
-                                                class="bestseller-chip fas fa-star" 
-                                                aria-hidden="true"></span>
-                                            
-                                        </div>
-                                        
-                                        <div class="pricing">
 
-                                            <p class="price retail">
-                                                ₦ 24,000
-                                            </p>
+      </div>
 
-                                            <p class="price wholesale">
-                                                ₦ 23,000
-                                            </p>
+      <div class="pricing">
 
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
+        <p class="price retail">
+          ₦ 101,000
+        </p>
 
-                                        </div>
+        <p class="price wholesale">
+          ₦ 97,500
+        </p>
 
-                                    </div>
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
 
-                                    <div class="call-to-act">
+      </div>
 
-                                        <button 
-                                            type="button"
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="beans-001-10kg" 
-                                            data-name="Nutragold® Honey Beans"
-                                        >
-                                            Add to Cart
-                                        </button>
+    </div>
 
-                                        <a 
-                                            href="ng-honey-beans.html?size=10kg"
-                                            class="btn btn-primary"
-                                        >
-                                            View →
-                                        </a>                               
+    <div class="call-to-act">
 
-                                    </div>  
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="beans-b002"
+        data-name="Nutragold® Bulky Brown Beans"
+      >Add to Cart</button>
 
-                                </div>
+      <a 
+        href="ng-brown-beans-b.html?size=Bulk"
+        class="btn btn-primary"
+      >View →</a>
 
-                            </div>
+    </div>
 
-                            <!-- Bestseller 3: 25kg Rice -->
-                            <div 
-                                class="product-card bestseller"
-                                data-base-sku="rice-001"
-                                data-name="Nutragold® Parboiled Nigerian Rice"
-                                data-category="rice"
-                                data-visibility="all"
-                                data-bestseller-size="25kg"
-                            >
+  </div>
 
-                                <div class="product-card-header">
+</div>
+<!-- -->
+<div 
+  class="product-card bestseller wholesale"
+  data-base-sku="beans-b001"
+  data-name="Nutragold® Bulky Honey Beans"
+  data-category="beans"
+  data-price-retail="111000"
+  data-price-wholesale="107500"
+  data-visibility="registered"
+  data-bestseller-size="Bulk"
+>
 
-                                    <picture class="product-img">
-                                        <img src="assets/images/Nutragold_r25.webp" alt="Nutragold Parboiled Nigerian Rice">
-                                    </picture>
+  <div class="product-card-header">
 
-                                    <span class="stock-badge in-stock">
+    <picture class="product-img">
+      <img src="./assets/images/nutragold-hb-DfFv35wd.webp" alt="Nutragold Bulky Honey Beans">
+    </picture>
 
-                                        <span class="fas fa-check"></span>
+    <span class="stock-badge in-stock">
 
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
+      <span class="fas fa-check"></span>
 
-                                    </span>
-                                    
-                                </div>
+      <span class="stock-badge__text">
+        In Stock
+      </span>
 
-                                <div class="product-card-body">
+    </span>
 
-                                    <div class="product-details">
+  </div>
 
-                                        <h3 class="title">
-                                            Nutragold® Parboiled Nigerian Rice
-                                        </h3>
+  <div class="product-card-body">
 
-                                        <div class="attrs bestseller-variant">
+    <div class="product-details">
 
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="25kg"
-                                                data-sku="rice-001-25kg"
-                                                data-price-retail="30000"
-                                                data-price-wholesale="29000"
-                                                data-stock="120"
-                                            >
-                                                25kg
-                                            </span>
+      <h3 class="title">
+        Nutragold® Bulky Honey Beans
+      </h3>
 
-                                            <span class="bestseller-chip fas fa-star" aria-hidden="true"></span>
+      <div class="attrs weight-selector">
 
-                                        </div>
 
-                                        <div class="pricing">
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="Bulk"
+            data-sku="beans-b001"
+          >
+            Bulk
+          </span>
 
-                                            <p class="price retail">
-                                                ₦ 30,000
-                                            </p>
+            <span class="bestseller-chip fas fa-star" aria-hidden="true"></span>
 
-                                            <p class="price wholesale">
-                                                ₦ 29,000
-                                            </p>
 
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
+      </div>
 
-                                        </div>
+      <div class="pricing">
 
-                                    </div>
+        <p class="price retail">
+          ₦ 111,000
+        </p>
 
-                                    <div class="call-to-act">
+        <p class="price wholesale">
+          ₦ 107,500
+        </p>
 
-                                        <button
-                                            type="button"
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="rice-001-25kg"
-                                            data-name="Nutragold® Parboiled Nigerian Rice"
-                                        >
-                                            Add to Cart
-                                        </button>
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
 
-                                        <a href="ng-parboiled-rice.html?size=25kg" class="btn btn-primary">
-                                            View →
-                                        </a>
+      </div>
 
-                                    </div>
+    </div>
 
-                                </div>
+    <div class="call-to-act">
 
-                            </div>
-                            
-                            <!-- Bestseller 4: 25kg Brown Beans -->
-                            <div 
-                                class="product-card bestseller"
-                                data-base-sku="beans-002" 
-                                data-name="Nutragold® Brown Beans"
-                                data-category="beans" 
-                                data-visibility="all"
-                                data-bestseller-size="25kg"
-                            >
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="beans-b001"
+        data-name="Nutragold® Bulky Honey Beans"
+      >Add to Cart</button>
 
-                                <div class="product-card-header">
+      <a 
+        href="ng-honey-beans-b.html?size=Bulk"
+        class="btn btn-primary"
+      >View →</a>
 
-                                    <picture class="product-img">
-                                        <img src="assets/images/nutragold-bb.webp" alt="Nutragold Brown Beans">
-                                    </picture>
+    </div>
 
-                                    <span class="stock-badge in-stock">
+  </div>
 
-                                        <span class="fas fa-check"></span>
+</div>
+<!-- -->
+<div 
+  class="product-card bestseller wholesale"
+  data-base-sku="garri-b002"
+  data-name="Nutragold® Bulky White Garri - Standard"
+  data-category="garri"
+  data-price-retail="46000"
+  data-price-wholesale="43500"
+  data-visibility="registered"
+  data-bestseller-size="Bulk"
+>
 
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
+  <div class="product-card-header">
 
-                                    </span>
+    <picture class="product-img">
+      <img src="./assets/images/nutragold-sg-BLz-AeVA.webp" alt="Nutragold Bulky White Garri Standard">
+    </picture>
 
-                                </div>
+    <span class="stock-badge in-stock">
 
-                                <div class="product-card-body">
+      <span class="fas fa-check"></span>
 
-                                    <div class="product-details">
+      <span class="stock-badge__text">
+        In Stock
+      </span>
 
-                                        <h3 class="title">
-                                            Nutragold® Brown Beans
-                                        </h3>
+    </span>
 
-                                        <div class="attrs weight-selector">
+  </div>
 
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="25kg" 
-                                                data-sku="beans-002-25kg" 
-                                                data-price-retail="49000" 
-                                                data-price-wholesale="47500"
-                                                active data-stock="120" 
-                                            >
-                                                25kg
-                                            </span>
-                                            
-                                            <span 
-                                                class="bestseller-chip fas fa-star" 
-                                                aria-hidden="true"></span>
+  <div class="product-card-body">
 
-                                        </div>
+    <div class="product-details">
 
-                                        <div class="pricing">
+      <h3 class="title">
+        Nutragold® Bulky White Garri - Standard
+      </h3>
 
-                                            <p class="price retail">
-                                                ₦ 49,000
-                                            </p>
+      <div class="attrs weight-selector">
 
-                                            <p class="price wholesale">
-                                                ₦ 47,500
-                                            </p>
 
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="Bulk"
+            data-sku="garri-b002"
+          >
+            Bulk
+          </span>
 
-                                        </div>
+            <span class="bestseller-chip fas fa-star" aria-hidden="true"></span>
 
-                                    </div>
 
-                                    <div class="call-to-act">
+      </div>
 
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="beans-002-25kg"
-                                            data-name="Nutragold Brown Beans"
-                                        >
-                                            Add to Cart
-                                        </button>
+      <div class="pricing">
 
-                                        <a 
-                                            href="ng-brown-beans.html?size=25kg" 
-                                            class="btn btn-primary"
-                                        >
-                                            View  →
-                                        </a>
+        <p class="price retail">
+          ₦ 46,000
+        </p>
 
-                                    </div>
+        <p class="price wholesale">
+          ₦ 43,500
+        </p>
 
-                                </div>
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
 
-                            </div>
+      </div>
 
-                            <!-- Bestseller 5: 5kg Premium Garri -->
-                            <div 
-                                class="product-card bestseller"
-                                data-base-sku="garri-001" 
-                                data-name="Nutragold® White Garri - Premium (5kg)"
-                                data-category="garri"
-                                data-visibility="all"
-                                data-bestseller-size="5kg"
-                            >
+    </div>
 
-                                <div class="product-card-header">
+    <div class="call-to-act">
 
-                                    <picture class="product-img">
-                                        <img src="./assets/images/nutragold-pg-CrRgKMaJ.webp" alt="Nutragold White Garri - Premium">
-                                    </picture>
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="garri-b002"
+        data-name="Nutragold® Bulky White Garri - Standard"
+      >Add to Cart</button>
 
-                                    <span class="stock-badge in-stock">
+      <a 
+        href="ng-white-garri-sb.html?size=Bulk"
+        class="btn btn-primary"
+      >View →</a>
 
-                                        <span class="fas fa-check"></span>
+    </div>
 
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
+  </div>
 
-                                    </span>
+</div>
+<!-- -->
+<div 
+  class="product-card bestseller"
+  data-base-sku="beans-001"
+  data-name="Nutragold® Honey Beans"
+  data-category="beans"
+  data-price-retail="13000"
+  data-price-wholesale="12500"
+  
+  data-bestseller-size="5kg"
+>
 
-                                </div>
+  <div class="product-card-header">
 
-                                <div class="product-card-body">
+    <picture class="product-img">
+      <img src="./assets/images/nutragold-hb-DfFv35wd.webp" alt="Nutragold Honey Beans">
+    </picture>
 
-                                    <div class="product-details">
+    <span class="stock-badge in-stock">
 
-                                        <h3 class="title">
-                                            Nutragold® White Garri - Premium
-                                        </h3>
+      <span class="fas fa-check"></span>
 
-                                        <div class="attrs weight-selector">
+      <span class="stock-badge__text">
+        In Stock
+      </span>
 
-                                            <span
-                                                class="attr-pill weight-chip active"
-                                                data-size="5kg"
-                                                data-sku="garri-001-5kg"
-                                                data-price-retail="8000"
-                                                data-price-wholesale="7500"
-                                                data-stock="250"
-                                            >
-                                                5kg
-                                            </span>
+    </span>
 
-                                            <span 
-                                                class="bestseller-chip fas fa-star" 
-                                                aria-hidden="true"></span>
+  </div>
 
-                                        </div>
+  <div class="product-card-body">
 
-                                        <div class="pricing">
+    <div class="product-details">
 
-                                            <p class="price retail">
-                                                ₦ 8,000
-                                            </p>
+      <h3 class="title">
+        Nutragold® Honey Beans
+      </h3>
 
-                                            <p class="price wholesale">
-                                                ₦ 7,500
-                                            </p>
+      <div class="attrs weight-selector">
 
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
 
-                                        </div>
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="5kg"
+            data-sku="beans-001-5kg"
+          >
+            5kg
+          </span>
 
-                                    </div>
+            <span class="bestseller-chip fas fa-star" aria-hidden="true"></span>
 
-                                    <div class="call-to-act">
 
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="garri-001-5kg"
-                                            data-name="Nutragold® White Garri - Premium"
-                                        >
-                                            Add to Cart
-                                        </button>
+      </div>
 
-                                        <a 
-                                            href="ng-white-garri-p.html?size=5kg" 
-                                            class="btn btn-primary"
-                                        >
-                                            View →
-                                        </a>  
+      <div class="pricing">
 
-                                    </div>
+        <p class="price retail">
+          ₦ 13,000
+        </p>
 
-                                </div>
+        <p class="price wholesale">
+          ₦ 12,500
+        </p>
 
-                            </div>
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
 
-                            <!-- Bestseller 6: 10kg Standard Garri -->
-                            <div 
-                                class="product-card"
-                                data-base-sku="garri-002" 
-                                data-name="Nutragold® White Garri - Standard"
-                                data-category="garri" 
-                                data-visibility="all"
-                                data-bestseller-size="10kg"
-                            >
+      </div>
 
-                                <div class="product-card-header">
+    </div>
 
-                                    <picture class="product-img">
-                                        <img src="./assets/images/nutragold-sg-BLz-AeVA.webp" alt="Nutragold Standard White Garri">
-                                    </picture>
+    <div class="call-to-act">
 
-                                    <span class="stock-badge in-stock">
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="beans-001-5kg"
+        data-name="Nutragold® Honey Beans"
+      >Add to Cart</button>
 
-                                        <span class="fas fa-check"></span>
+      <a 
+        href="ng-honey-beans.html?size=5kg"
+        class="btn btn-primary"
+      >View →</a>
 
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
+    </div>
 
-                                    </span>
+  </div>
 
-                                </div>
+</div>
+<!-- -->
+<div 
+  class="product-card bestseller"
+  data-base-sku="garri-002"
+  data-name="Nutragold® White Garri - Standard"
+  data-category="garri"
+  data-price-retail="6000"
+  data-price-wholesale="5500"
+  
+  data-bestseller-size="10kg"
+>
 
-                                <div class="product-card-body">
+  <div class="product-card-header">
 
-                                    <div class="product-details">
+    <picture class="product-img">
+      <img src="./assets/images/nutragold-sg-BLz-AeVA.webp" alt="Nutragold White Garri Standard">
+    </picture>
 
-                                        <h3 class="title">
-                                            Nutragold® White Garri - Standard
-                                        </h3>
+    <span class="stock-badge in-stock">
 
-                                        <div class="attrs weight-selector">
+      <span class="fas fa-check"></span>
 
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="10kg" 
-                                                data-sku="garri-002-10kg" 
-                                                data-price-retail="12000" 
-                                                data-price-wholesale="11000"
-                                                data-stock="180" 
-                                            >
-                                                10kg
-                                            </span>
+      <span class="stock-badge__text">
+        In Stock
+      </span>
 
-                                            <span 
-                                                class="bestseller-chip fas fa-star" 
-                                                aria-hidden="true"></span>
+    </span>
 
-                                        </div>
-                                        
-                                        <div class="pricing">
+  </div>
 
-                                            <p class="price retail">
-                                                ₦ 12,000
-                                            </p>
+  <div class="product-card-body">
 
-                                            <p class="price wholesale">
-                                                ₦ 11,000
-                                            </p>
+    <div class="product-details">
 
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
+      <h3 class="title">
+        Nutragold® White Garri - Standard
+      </h3>
 
-                                        </div>
+      <div class="attrs weight-selector">
 
-                                    </div>
 
-                                    <div class="call-to-act">
+          <span 
+            class="attr-pill weight-chip active"
+            data-size="10kg"
+            data-sku="garri-002-10kg"
+          >
+            10kg
+          </span>
 
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="garri-002-10kg"
-                                            data-name="Nutragold® White Garri - Standard"
-                                        >
-                                            Add to Cart
-                                        </button>
+            <span class="bestseller-chip fas fa-star" aria-hidden="true"></span>
 
-                                        <a 
-                                            href="ng-white-garri-s.html?size=10kg" 
-                                            class="btn btn-primary">
-                                            View →
-                                        </a> 
 
-                                    </div>
+      </div>
 
-                                </div>
+      <div class="pricing">
 
-                            </div>
-                            
-                            <!-- Card 8: Bulk Premium Garri -->
-                            <div 
-                                class="product-card wholesale featured"
-                                data-base-sku="garri-b001" 
-                                data-name="Nutragold® Bulky White Garri - Premium"
-                                data-category="garri" 
-                                data-visibility="wholesale"
-                            >
+        <p class="price retail">
+          ₦ 12,000
+        </p>
 
-                                <div class="product-card-header">
+        <p class="price wholesale">
+          ₦ 11,000
+        </p>
 
-                                    <picture class="product-img">
-                                        <img src="./assets/images/nutragold-pg-CrRgKMaJ.webp" alt="Nutragold Bulky White Garri Premium">
-                                    </picture>
+        <span class="badge badge-orange price-mode-badge">
+          Retail
+        </span>
 
-                                    <span class="stock-badge in-stock">
+      </div>
 
-                                        <span class="fas fa-check"></span>
+    </div>
 
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
+    <div class="call-to-act">
 
-                                    </span>
+      <button 
+        type="button"
+        class="btn btn-green btn-add-cart"
+        data-sku="garri-002-5kg"
+        data-name="Nutragold® White Garri - Standard"
+      >Add to Cart</button>
 
-                                </div>
+      <a 
+        href="ng-white-garri-s.html?size=10kg"
+        class="btn btn-primary"
+      >View →</a>
 
-                                <div class="product-card-body">
+    </div>
 
-                                    <div class="product-details">
+  </div>
 
-                                        <h3 class="title">
-                                            Nutragold® Bulky White Garri - Premium
-                                        </h3>
-
-                                        <div class="attrs weight-selector">
-
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="Bulk" 
-                                                data-sku="garri-b001" 
-                                                data-price-retail="76000" 
-                                                data-price-wholesale="73500" 
-                                                data-stock="80" 
-                                            >
-                                                Bulk Bag
-                                            </span>
-
-                                            <span 
-                                                class="bestseller-chip fas fa-star" 
-                                                aria-hidden="true"></span>
-                                            
-                                        </div>
-
-                                        <div class="pricing">
-
-                                            <p class="price retail">
-                                                ₦ 76,000
-                                            </p>
-
-                                            <p class="price wholesale">
-                                                ₦ 73,500
-                                            </p>
-
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="call-to-act">
-
-                                        <button
-                                            type="button" 
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="garri-b001" 
-                                            data-name="Nutragold® Bulky White Garri - Premium"
-                                        >
-                                            Add to Cart
-                                        </button>
-
-                                        <a 
-                                            href="ng-white-garri-pb.html" 
-                                            class="btn btn-primary"
-                                        >
-                                            View →
-                                        </a>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <!-- Bestseller 8: Bulk Honey Beans -->
-                            <div 
-                                class="product-card wholesale bestseller"
-                                data-base-sku="beans-b001" 
-                                data-name="Nutragold® Bulky Honey Beans"
-                                data-category="beans" 
-                                data-visibility="wholesale"
-                            >
-
-                                <div class="product-card-header">
-
-                                    <picture class="product-img">
-                                        <img src="./assets/images/nutragold-hb-DfFv35wd.webp" alt="Nutragold Bulky Honey Beans">
-                                    </picture>
-
-                                    <span class="stock-badge in-stock">
-
-                                        <span class="fas fa-check"></span>
-
-                                        <span class="stock-badge__text">
-                                            In Stock
-                                        </span>
-
-                                    </span>
-                                    
-                                </div>
-
-                                <div class="product-card-body">
-
-                                    <div class="product-details">
-
-                                        <h3 class="title">
-                                            Nutragold® Bulky Honey Beans
-                                        </h3>
-
-                                        <div class="attrs weight-selector">
-
-                                            <span 
-                                                class="attr-pill weight-chip active" 
-                                                data-size="Bulk" 
-                                                data-sku="beans-b001" 
-                                                data-price-retail="111000" 
-                                                data-price-wholesale="107500" 
-                                                data-stock="80" 
-                                            >
-                                                Bulk Bag
-                                            </span>
-
-                                            <span 
-                                                class="bestseller-chip fas fa-star" 
-                                                aria-hidden="true"></span>
-
-                                        </div>
-
-                                        <div class="pricing">
-
-                                            <p class="price retail">
-                                                ₦ 111,000
-                                            </p>
-
-                                            <p class="price wholesale">
-                                                ₦ 107,500
-                                            </p>
-
-                                            <span class="badge badge-orange price-mode-badge">
-                                                Retail
-                                            </span>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="call-to-act">
-
-                                        <button 
-                                            type="button" 
-                                            class="btn btn-green btn-add-cart"
-                                            data-sku="beans-b001"
-                                            data-name="Nutragold® Bulky Honey Beans"
-                                        >
-                                            Add to Cart
-                                        </button>
-
-                                        <a 
-                                            href="ng-honey-beans-b.html"
-                                             class="btn btn-primary"
-                                        >
-                                            View →
-                                        </a>         
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            
-                        </div>
-
-                    </section>
-
-                    <!-- ============================================ -->
-                    <!-- 3. CUSTOMER REVIEWS (Place before Best Selling) -->
-                    <!-- ============================================ -->
-                    <section class="section testimonials">
-
-                        <div class="section-header">
-                            <h2 class="section-title">Reviews & Testimonials</h2>
-                            <p class="section-subtitle">Here is what restaurant owners, stockists, and families say about Nutragold® staples</p>
-                        </div>
-                            
-                        <div class="testimonials-grid">
-
-                            <div class="testimonial-card">
-                                <div class="rating-stars">★★★★★</div>
-                                <p class="review-text">"Nutragold Nigerian Rice is exceptionally clean—zero stones. Delivered directly to my restaurant in Ikeja within 4 hours!"</p>
-                                <div class="reviewer-info">
-                                    <strong>Chief Mrs. Adebayo</strong>
-                                    <span>Restaurant Owner • Ikeja, Lagos</span>
-                                </div>
-                            </div>
-
-                            <div class="testimonial-card highlight-card">
-                                <div class="rating-stars">★★★★★</div>
-                                <p class="review-text">"As a stockist in Agege, getting true factory rates without middleman markup has boosted our retail margins by 18%."</p>
-                                <div class="reviewer-info">
-                                    <strong>Emeka O.</strong>
-                                    <span>Verified Retailer • Agege Market</span>
-                                </div>
-                            </div>
-
-                            <div class="testimonial-card">
-                                <div class="rating-stars">★★★★★</div>
-                                <p class="review-text">"The Honey Beans cook fast and taste great. Super easy to switch between my household and business orders on Greencart."</p>
-                                <div class="reviewer-info">
-                                    <strong>Funmi K.</strong>
-                                    <span>Household & Catering Buyer</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </section>
-
-
-                    <!-- ============================================ -->
-                    <!-- 4. FAQ ACCORDION (Place before Footer) -->
-                    <!-- ============================================ -->
-                    <section class="section faqs">
-
-                        <div class="section-header">
-                            <h2 class="section-title">Frequently Asked Questions</h2>
-                            <p class="section-subtitle">Everything you need to know about ordering and delivery</p>
-                        </div>
-
-                        <div class="faqs-accordion">
-
-                            <details class="faqs-item" open>
-                                <summary class="faqs-question">How fast is Same-Day Lagos delivery?</summary>
-                                <div class="faqs-answer">
-                                    <p>Orders placed before 12:00 PM (Monday–Saturday) are delivered same-day across Lagos State. Orders after 12:00 PM ship first thing the following morning.</p>
-                                </div>
-                            </details>
-
-                            <details class="faqs-item">
-                                <summary class="faqs-question">How do I qualify for Wholesale & Stockist pricing?</summary>
-                                <div class="faqs-answer">
-                                    <p>Simply register for a B2B Onboarding account. Once verified, factory rates automatically replace retail prices whenever you are logged in!</p>
-                                </div>
-                            </details>
-
-                            <details class="faqs-item">
-                                <summary class="faqs-question">What guarantees freshness and quality?</summary>
-                                <div class="faqs-answer">
-                                    <p>All Nutragold® staples are sourced directly from certified farms and processed in sealed, hygienic food-grade bags to guarantee stone-free purity.</p>
-                                </div>
-                            </details>
-
-                        </div>
-                        
-                    </section>
-
-                    <!-- ===== PROMOTIONAL BANNERS =====
-                    <div class="container promo-banner">
-                        <div>
-                            <span class="promo-tag">🎉 NEW CUSTOMER</span>
-                            <span class="promo-text">Get 10% off your first wholesale order</span>
-                        </div>
-                        <a href="wholesale-registration.html" class="promo-cta">Claim Offer →</a>
-                    </div> -->
-
-                </div>
+</div>
+</div>
 
             </section>
 

@@ -1,13 +1,13 @@
 {
-  "_foodcart_hd-2_M7bdSt.css": {
-    "file": "assets/css/foodcart_hd-2_M7bdSt.css",
-    "src": "_foodcart_hd-2_M7bdSt.css"
+  "_foodcart_hd-NXXDHooB.css": {
+    "file": "assets/css/foodcart_hd-NXXDHooB.css",
+    "src": "_foodcart_hd-NXXDHooB.css"
   },
-  "_foodcart_hd-CuotNS6e.js": {
-    "file": "assets/js/foodcart_hd-CuotNS6e.js",
+  "_foodcart_hd-zV-UCBhQ.js": {
+    "file": "assets/js/foodcart_hd-zV-UCBhQ.js",
     "name": "foodcart_hd",
     "css": [
-      "assets/css/foodcart_hd-2_M7bdSt.css"
+      "assets/css/foodcart_hd-NXXDHooB.css"
     ],
     "assets": [
       "assets/fonts/fa-brands-400-C99Yv4gD.woff2",
@@ -20,7 +20,8 @@
       "assets/fonts/fa-v4compatibility-F0dlVTLQ.ttf",
       "assets/fonts/NeulisAlt-Bold-Igz67dmR.woff2",
       "assets/fonts/NeulisAlt-Medium-eqg9S93n.woff2",
-      "assets/fonts/NeulisAlt-Regular-Daju5OXl.woff2"
+      "assets/fonts/NeulisAlt-Regular-Daju5OXl.woff2",
+      "assets/images/wide-banner-1LJvcB2n.webp"
     ]
   },
   "_loader-4gA1zna9.js": {
@@ -79,21 +80,17 @@
     "file": "assets/images/nutragold-sgi-5-CTEh_LZN.webp",
     "src": "assets/images/nutragold-sgi-5.webp"
   },
-  "assets/images/webp/nutragold-stacks-2.webp": {
-    "file": "assets/images/nutragold-stacks-2-BgSXjAL4.webp",
-    "src": "assets/images/webp/nutragold-stacks-2.webp"
-  },
   "assets/nutragold.svg": {
     "file": "assets/images/nutragold-D0wxJHQU.svg",
     "src": "assets/nutragold.svg"
   },
   "search.html": {
-    "file": "assets/js/search-C0-zfYfd.js",
+    "file": "assets/js/search-BnxIsf9O.js",
     "name": "search",
     "src": "search.html",
     "isEntry": true,
     "imports": [
-      "_foodcart_hd-CuotNS6e.js",
+      "_foodcart_hd-zV-UCBhQ.js",
       "_loader-4gA1zna9.js"
     ]
   },
@@ -108,6 +105,10 @@
   "src/fonts/NeulisAlt-Regular.woff2": {
     "file": "assets/fonts/NeulisAlt-Regular-Daju5OXl.woff2",
     "src": "src/fonts/NeulisAlt-Regular.woff2"
+  },
+  "src/images/wide-banner.webp": {
+    "file": "assets/images/wide-banner-1LJvcB2n.webp",
+    "src": "src/images/wide-banner.webp"
   },
   "src/vendor/fontawesome/css/webfonts/fa-brands-400.ttf": {
     "file": "assets/fonts/fa-brands-400-DtZKBM2a.ttf",

@@ -11,22 +11,22 @@
                 <div class="notice-bar-inner relative container">
 
                     <!-- Universal Promo Slide 1 (Applies to Guest, Retail, Wholesale) -->
-                    <div data-notice="promo" class="notice-bar-content">
+                    <div data-notice="guest" class="notice-bar-content">
                         <span class="notice-bar-item">
                             <!-- <span class="fas fa-gift"></span> -->
                             <span>Get 5% off your first order — use code <strong>GRAINS10</strong></span>
                         </span>
                     </div>
 
-                    <!-- Guest Message Slide 2 (Rotates with Promo slide for Guests) -->
+                    <!-- Guest Message Slide 2 (Rotates with Promo slide for Guests)
                     <div data-notice="guest" class="notice-bar-content">
-                        <span class="notice-bar-item">
-                            <!-- <span class="fas fa-user-plus"></span> -->
+                        <span class="notice-bar-item"> -->
+                            <!-- <span class="fas fa-user-plus"></span>
                             <span>Register as a buyer to enjoy exclusive offers — 
                                 <a href="register.html" class="notice-bar-link">Register Now →</a>
                             </span>
                         </span>
-                    </div>
+                    </div> -->
 
                     <!-- Retail Message Slide 2 (Rotates with Promo slide for Retail users) -->
                     <div data-notice="retail" class="notice-bar-content">
@@ -72,9 +72,14 @@
                         </a>
                     
                         <!-- 4. Dynamic Wholesale Status Badge -->
-                        <div id="pricing-status-pill" class="pricing-status-pill retail mobile-pill d-none">
+                        <div 
+                            id="tierIndicator" 
+                            class="tier-indicator"
+                            role="status"
+                            aria-label="Active User Tier: Guest"
+                            title="User Tier: Guest"
+                        >
                             <span class="status-dot"></span>
-                            <span id="pillPricingText" class="status-text">Retail</span>
                         </div>
 
                      </div>
@@ -89,18 +94,12 @@
 
                     </div>                    
 
-                    <!-- 4. Dynamic Wholesale Status Badge -->
-                    <div id="pricing-status-pill" class="pricing-status-pill retail desktop-pill d-none">
-                        <span class="status-dot"></span>
-                        <span id="pillPricingText" class="status-text">Guest</span>
-                    </div>      
-
                     <!-- 5. Central Search Bar -->
                     <div id="searchBar" class="search-bar">
                         <form id="searchForm" action="search.html" method="GET" class="search-form">
                             <input id="searchInput" type="text" name="q" placeholder="Search food staples, rice, beans, garri..." autocomplete="off">
                             <button class="search-btn" type="submit" aria-label="Search">
-                                <span title="Search" class="search-icon fa-solid fa-search" role="img"></spam>
+                                <span title="Search" class="search-icon fa-solid fa-search" role="img"></span>
                             </button>
                         </form>
                     </div>
